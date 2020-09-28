@@ -1,1 +1,3 @@
 echo $PATH
+sistēmas mainigais PATH aplūko tās mapes, kurās jāielūkojas, palaižot komandu
+PATH=$PATH:~
