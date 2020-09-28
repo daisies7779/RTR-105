@@ -11,3 +11,7 @@ echo $?
 #ja kļūda tad izdos kļūdas numuru
 echo $?
 127
+
+#Dabūt repozitoriju
+
+
