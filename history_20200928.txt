@@ -1,0 +1,99 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  pwd
+    5  whereis pwd
+    6  cd /
+    7  pwd
+    8  ls
+    9  echo $?
+   10  ~
+   11  cd ~
+   12  touch a.sh
+   13  ls -ls
+   14  a.sh
+   15  cat a.sh
+   16  $?
+   17  echo $?
+   18  pwd
+   19  ls -a
+   20  git clone github.com/daisies7779/RTR-105/
+   21  git clone https://github.com/daisies7779/RTR-105/
+   22  ls -a
+   23  cd RTR-105/
+   24  ls
+   25  ls -a
+   26  cat 3.nodarbība 
+   27  pwd
+   28  nano first.c
+   29  cat first.c 
+   30  ls -lt
+   31  gcc first.c 
+   32  nano first.c 
+   33  gcc first.c 
+   34  ls -l
+   35  ls -lt
+   36  echo $?
+   37  a.out
+   38  ./a.out
+   39  echo $?
+   40  cp first.c second.c
+   41  nano second.c 
+   42  lt -lt
+   43  ls -lt
+   44  gcc second.c 
+   45  ls -lt
+   46  gcc first.c -o first.out
+   47  gcc second.c -o second.out
+   48  ls -lrt
+   49  ls -l
+   50  ls -lt
+   51  cp first.c firstError.c
+   52  ls -lt
+   53  nano firstError.c 
+   54  gcc firstError.c 
+   55  echo $?
+   56  cp first.c HelloWorld.c
+   57  ls -lt
+   58  nano HelloWorld.c 
+   59  cat HelloWorld.c 
+   60  gcc HelloWorld.c 
+   61  echo $?
+   62  ls -lt
+   63  a.out
+   64  cat a.out 
+   65  clear
+   66  ls -lt
+   67  gcc HelloWorld.c HelloWorld.out
+   68  history
+   69  gcc HelloWorld.c -o HelloWorld.out
+   70  ls -lt
+   71  HelloWorld.out
+   72  nano HelloWorld.c
+   73  gcc HelloWorld.c -o HelloWorld.out
+   74  $?
+   75  echo $?
+   76  ls -lt
+   77  ./HelloWorld.out 
+   78  nano HelloWorld.c
+   79  gcc HelloWorld.c
+   80  ./a.out 
+   81  echo $?
+   82  ls -lt
+   83  nano HelloWorld.
+   84  nano HelloWorld.c
+   85  gcc HelloWorld.c
+   86  nano HelloWorld.c
+   87  gcc HelloWorld.c
+   88  ./a.out 
+   89  nano HelloWorld.c
+   90  gcc HelloWorld.c
+   91  ./a.out 
+   92  nano HelloWorld.c
+   93  gcc HelloWorld.c
+   94  ./a.out 
+   95  echo $?
+   96  nano HelloWorld.c
+   97  pwd
+   98  history
+   99  history > history_20200928.txt
