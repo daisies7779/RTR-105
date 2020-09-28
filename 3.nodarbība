@@ -1,3 +1,13 @@
 echo $PATH
 sistēmas mainigais PATH aplūko tās mapes, kurās jāielūkojas, palaižot komandu
 PATH=$PATH:~
+
+#kāds ir pēdējās darbības izpildīšanas rezultāts. Skriptus sadal apakšskriptos(moduļos) Pirms palaist nākamo, būtu jāpajautā ar ko beidzas iepriekšejais modulis,
+# ja ir nulle, tad viss kārtībā.
+#ja viss kārtībā izdod nulli
+echo $?
+0
+
+#ja kļūda tad izdos kļūdas numuru
+echo $?
+127
