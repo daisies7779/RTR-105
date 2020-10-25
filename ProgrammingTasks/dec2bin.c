@@ -1,11 +1,7 @@
 #include <stdio.h>
-int
-main ()
+int main ()
 {
   char ch, bin;
-
-
-
   printf ("\nEnter value of char\n");
   scanf (" %d", &ch);
 
@@ -18,3 +14,23 @@ main ()
 
   return 0;
 }
+
+#include <stdio.h>
+int main ()
+{
+  char ch, bin;
+
+
+
+  printf ("\nEnter value of char\n");
+  scanf (" %d", &ch);
+
+  printf ("\nValue of char : %d", ch);
+
+while (ch>0){
+    
+    ch = ch>>1;
+    
+  printf("1");
+}
+  
