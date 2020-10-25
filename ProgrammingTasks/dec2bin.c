@@ -34,3 +34,29 @@ while (ch>0){
   printf("1");
 }
   
+  
+  
+  #include <stdio.h>
+int main ()
+{
+ char ch, c, atlikums;
+
+  printf("Ievadiet decimālskaitli\n");
+  scanf("%d", &ch);
+  printf("\n Jūs ievadījāt decimālskaitl %d:\n", ch);
+  
+    for (c = 3; c >= 0; c--)
+  {
+    atlikums = ch >> c;
+
+    if (atlikums & 1)
+      printf("1");
+    else
+      printf("0");
+  }
+
+  printf("\n");
+
+  return 0;
+}
+  
