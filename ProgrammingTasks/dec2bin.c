@@ -3,7 +3,7 @@ int main ()
 {
   char skaitlis, pozicija, atlikums;
 
-  printf ("Ievadiet decimDlskaitli\n");
+  printf ("Ievadiet decimālskaitli\n");
   scanf ("%d", &skaitlis);
   for (pozicija = 8; pozicija >= 0; pozicija--)
     {
