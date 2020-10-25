@@ -1,62 +1,21 @@
 #include <stdio.h>
 int main ()
 {
-  char ch, bin;
-  printf ("\nEnter value of char\n");
-  scanf (" %d", &ch);
+  char skaitlis, pozicija, atlikums;
 
-  printf ("\nValue of char : %d", ch);
+  printf ("Ievadiet decimDlskaitli\n");
+  scanf ("%d", &skaitlis);
+  for (pozicija = 8; pozicija >= 0; pozicija--)
+    {
+      atlikums = skaitlis >> pozicija;
 
-  printf ("\n ch >> 1 = %d\n", ch >> 2);
-  printf ("\n ch << 1 = %d\n", ch << 2);
+      if (atlikums & 1)
+	printf ("1");
+      else
+	printf ("0");
+    }
 
-
-
-  return 0;
-}
-
-#include <stdio.h>
-int main ()
-{
-  char ch, bin;
-
-
-
-  printf ("\nEnter value of char\n");
-  scanf (" %d", &ch);
-
-  printf ("\nValue of char : %d", ch);
-
-while (ch>0){
-    
-    ch = ch>>1;
-    
-  printf("1");
-}
-  
-  
-  
-  #include <stdio.h>
-int main ()
-{
- char ch, c, atlikums;
-
-  printf("Ievadiet decimālskaitli\n");
-  scanf("%d", &ch);
-  printf("\n Jūs ievadījāt decimālskaitl %d:\n", ch);
-  
-    for (c = 3; c >= 0; c--)
-  {
-    atlikums = ch >> c;
-
-    if (atlikums & 1)
-      printf("1");
-    else
-      printf("0");
-  }
-
-  printf("\n");
+  printf ("\n");
 
   return 0;
 }
-  
