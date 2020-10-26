@@ -7,9 +7,9 @@ int main ()
  // skaitlis deklarēts kā char, tāpēc tam jābūt robežā no -128 līdz 127	
   scanf ("%d", &skaitlis);
 
-/* Bitwise >> operācija ir ekfivalenta dalījumam ar divi.
+/* Bitwise >> operācija ir ekvivalenta dalījumam ar divi.
 mainīgais - atlikums - ir tā bitu virkne, kas palika baitā pēc bitwise operācijas.
-operācija (atlikums & 1) salīdzinās PĒDĒJO bitu mainīgā atlikums virknē ar 1. Tādejādi operācija ģenerēs 0, ja atlikums ir nulle, vai 1 ja atlikums ir viens.
+operācija (atlikums & 1) salīdzinās PĒDĒJO bitu mainīgā atlikums virknē ar 1. Tādejādi operācija ģenerēs 0, ja atlikuma pēdējais bits ir nulle, vai 1 ja pēdējais bits ir viens.
 Lai realizētu dec to bin, ideja ir tajā, ka skaitļa bitus vajag cikliski pārbīdīt pa labi, katrā ciklā samazinot pārbīdāmo pozīciju daudzumu no 7 līdz 0.
 Nulles pārbīde nepieciešama, lai salīdzināt pašu pēdējo bitu bez pārbīdēm.
 Kopumā tādejādi būs veiktas 7+0 = 8 iterācijas, kas simbolizēs vienu baitu. Baits - tik liels ir char tipa decimālskaitlis.
