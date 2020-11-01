@@ -24,7 +24,7 @@ int main ()
   printf ("Lai kārtotu augošā secībā ievadiet skaitli 1, lai dilstošā 0 \n");
   scanf ("%d", &seciba);
 	
-  printf ("Skaitli tiek kārtoti %d režīmā", seciba);
+  printf ("Skaitli tiek kārtoti %d režīmā\n", seciba);
 	
 	
   
@@ -123,7 +123,8 @@ int main ()
   char token_sakums, token_vidus, token_beigas;
   
 
-  printf ("\nUzdevuma otrā daļa\n");	
+  printf ("\nUzdevuma otrā daļa\n");
+  printf ("\nIevadītajiem burtiem ir jābūt vai nu visiem LIELAJIEM vain nu visiem mazajiem\n");
   printf ("\nIevadiet burtu\n");
 
   scanf (" %c", &d);
