@@ -158,7 +158,6 @@ int main ()
           token_sakums = d;
           token_vidus = f;
           token_beigas = e;
-	      printf("Iegaja TE");
           
       } 
       else if ((int)e <= (int)d && (int)d < (int)f) {
