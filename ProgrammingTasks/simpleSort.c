@@ -117,29 +117,31 @@ int main ()
   
   // Otrā programmas daļa kārto burtus
 
-  char d, e, f, kartiba;
-  char token_jaunakais, token_videjais, token_vecakais;
+ char d, e, f, k;
+ char token_jaunakais, token_videjais, token_vecakais;
   
 
   printf ("Ievadiet burtu\n");
 
-  scanf ("%c", &d);
+  scanf (" %c", &d);
   
   printf ("Ievadiet burtu\n");
 
-  scanf ("%c", &e);
+  scanf (" %c", &e);
   
   printf ("Ievadiet burtu\n");
+  
+  scanf (" %c", &f);
 
-  scanf ("%c", &f);
+
 	
 	
-  printf ("Jūs ievadījāt,burtu1 %c burtu2 %c burtu3 %c \n", d,e,f);
+  printf ("\nJūs ievadījāt,burtu1 %c burtu2 %c burtu3 %c \n", d,e,f);
   printf ("Lai kārtotu alfabēta secībā ievadiet burtu A \n");
   printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z \n");
-  scanf ("%c", &kartiba);
+  scanf (" %c", &k);
   
-  printf ("Programma kārtos %c rezima \n", &kartiba);
+  printf ("\n Programma kārtos %d rezima \n", &k);
   
   
   return 0;
