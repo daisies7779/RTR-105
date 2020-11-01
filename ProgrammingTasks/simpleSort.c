@@ -1,3 +1,11 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
 #include <stdio.h>
 int main ()
 {
@@ -22,7 +30,7 @@ int main ()
   scanf ("%d", &seciba);
   
   if (seciba==1) {
-      printf("Augošā\n");
+      //Kārto augošā secībā
       if (a >= b && b >= c) {
           token_big = a;
           token_middle = b;
@@ -58,13 +66,14 @@ int main ()
           token_small = a;
           
       }
-    printf ("augošā secībā: mazākais =%d vidējais=%d lielākais=%d", token_small, token_middle, token_big);
+    printf ("augošā secībā: mazākais =%d vidējais=%d lielākais=%d \n", token_small, token_middle, token_big);
 
   }
   
   else if (seciba==0)
   {
-      printf("Dilstošā\n");
+      //Kārto dilstošā secībā
+      
       if (a <= b && b <= c) {
           token_small = a;
           token_middle = b;
@@ -100,9 +109,10 @@ int main ()
           token_big = a;
           
       }
-    printf ("dilstošā secībā: lielākais =%d vidējais=%d mazākais=%d", token_big, token_middle, token_small);
+    printf ("dilstošā secībā: lielākais =%d vidējais=%d mazākais=%d \n", token_big, token_middle, token_small);
       
   }
+  // Ja programmas loģikā ir tomēr kļūda, vai nekorekti ievadīta vērtība, paziņos par kļūdu
   else {printf("Programmā ir ielavījusies kļūda!");}
   
   
