@@ -135,12 +135,15 @@ int main ()
 
 	
 	
-  printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z \n");
+  printf ("Lai kārtotu alfabēta secībā ievadiet burtu A vai a \n");
+  printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z vai z \n");
   scanf (" %c", &kartiba);
   printf ("\n Programma kārtos %c rezima \n", kartiba);
    
-    if (kartiba=='A' || 'a') {
+    if (kartiba=='A' || kartiba=='a') {
       //Kārto augošā secībā
+      
+      printf("Te nav jaiet");
       if ((int)d <= (int)e && (int)e <= (int)f) {
           token_sakums = d;
           token_vidus = e;
@@ -179,9 +182,10 @@ int main ()
    printf ("Alfabēta secībā: %c   %c  %c \n", token_sakums, token_vidus, token_beigas);
   }
   
-  else if (kartiba=='Z' || 'z')
+  else if (kartiba=='Z' || kartiba=='z')
   {
       //Kārto dilstošā secībā
+	  printf("Iegajz Z");
       
       if ((int)d >= (int)e && (int)e >= (int)f) {
           token_sakums = d;
