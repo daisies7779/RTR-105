@@ -27,7 +27,6 @@ int main ()
   printf ("Skaitli tiek kārtoti %d režīmā\n", seciba);
 	
 	
-  
   if (seciba==1) {
       //Kārto augošā secībā
       if (a >= b && b >= c) {
@@ -72,6 +71,7 @@ int main ()
   else if (seciba==0)
   {
       //Kārto dilstošā secībā
+	 
       
       if (a <= b && b <= c) {
           token_small = a;
@@ -116,8 +116,7 @@ int main ()
   else {printf("Programmā ir ielavījusies kļūda!");
       
   }
- 
-  
+
   // Otrā programmas daļa kārto burtus
   char d, e, f, kartiba;
   char token_sakums, token_vidus, token_beigas;
@@ -125,25 +124,27 @@ int main ()
 
   printf ("\nUzdevuma otrā daļa\n");
   printf ("\nIevadītajiem burtiem ir jābūt vai nu visiem LIELAJIEM vain nu visiem mazajiem\n");
-  printf ("\nIevadiet burtu\n");
+  printf ("Ievadiet pirmo burtu\n");
 
   scanf (" %c", &d);
   
-  printf ("Ievadiet burtu\n");
+  printf ("Ievadiet otro burtu\n");
 
   scanf (" %c", &e);
   
-  printf ("Ievadiet burtu\n");
+  printf ("Ievadiet trešo burtu\n");
   
   scanf (" %c", &f);
 
 
 	
 	
-  printf ("Lai kārtotu alfabēta secībā ievadiet burtu A vai a \n");
+  printf ("\nLai kārtotu alfabēta secībā ievadiet burtu A vai a \n");
   printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z vai z \n");
   scanf (" %c", &kartiba);
   printf ("\n Programma kārtos %c rezima \n", kartiba);
+	
+  	
    
     if (kartiba=='A' || kartiba=='a') {
       //Kārto alfabēta secībā
@@ -157,6 +158,7 @@ int main ()
           token_sakums = d;
           token_vidus = f;
           token_beigas = e;
+	      printf("Iegaja TE");
           
       } 
       else if ((int)e <= (int)d && (int)d < (int)f) {
@@ -185,11 +187,11 @@ int main ()
       }
    printf ("Alfabēta secībā: %c   %c  %c \n", token_sakums, token_vidus, token_beigas);
   }
-  
+
   else if (kartiba=='Z' || kartiba=='z')
   {
       //Kārto pretēji alfabēta secībai
-	  printf("Iegajz Z");
+	
       
       if ((int)d >= (int)e && (int)e >= (int)f) {
           token_sakums = d;
