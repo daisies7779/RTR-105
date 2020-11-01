@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main ()
 {
+    
+    /* 
   int a, b, c, seciba;
   int token_big, token_middle, token_small;
   
@@ -111,7 +113,7 @@ int main ()
   else {printf("Programmā ir ielavījusies kļūda!");
       
   }
-  
+  */
   
   // Otrā programmas daļa kārto burtus
 
@@ -132,10 +134,12 @@ int main ()
   scanf ("%c", &f);
 	
 	
-  printf ("Jūs ievadījāt, a = %c b = %c c = %c \n", d,e,f);
+  printf ("Jūs ievadījāt,burtu1 %c burtu2 %c burtu3 %c \n", d,e,f);
   printf ("Lai kārtotu alfabēta secībā ievadiet burtu A \n");
   printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z \n");
   scanf ("%c", &kartiba);
+  
+  printf ("Programma kārtos %c rezima \n", &kartiba);
   
   
   return 0;
