@@ -22,7 +22,7 @@ int main ()
   scanf ("%d", &seciba);
   
   if (seciba==1) {
-      printf("true\n");
+      printf("Augošā\n");
       if (a >= b && b >= c) {
           token_big = a;
           token_middle = b;
@@ -58,15 +58,53 @@ int main ()
           token_small = a;
           
       }
+    printf ("augošā secībā: mazākais =%d vidējais=%d lielākais=%d", token_small, token_middle, token_big);
+
   }
   
   else if (seciba==0)
   {
+      printf("Dilstošā\n");
+      if (a <= b && b <= c) {
+          token_small = a;
+          token_middle = b;
+          token_big = c;
+      }
+      else if (a <= b && b > c) {
+          token_small = a;
+          token_middle = c;
+          token_big = b;
+          
+      } 
+      else if (b < a && a <= c) {
+          token_small = b;
+          token_middle = a;
+          token_big = c;
+          
+      }
+      else if (b < a && a > c) {
+          token_small = b;
+          token_middle = c;
+          token_big = a;
+          
+      }  
+      else if (c < a && a <= b) {
+          token_small = c;
+          token_middle = a;
+          token_big = b;
+          
+      }
+      else if (c < a && a > b) {
+          token_small = c;
+          token_middle = b;
+          token_big = a;
+          
+      }
+    printf ("dilstošā secībā: lielākais =%d vidējais=%d mazākais=%d", token_big, token_middle, token_small);
       
   }
   else {printf("Programmā ir ielavījusies kļūda!");}
   
-  printf ("augošā secībā: mazākais =%d vidējais=%d lielākais=%d", token_small, token_middle, token_big);
-
+  
   return 0;
 }
