@@ -116,7 +116,7 @@ int main ()
   */
   
   // Otrā programmas daļa kārto burtus
-char d, e, f, kartiba;
+  char d, e, f, kartiba;
   char token_sakums, token_vidus, token_beigas;
   
 
@@ -136,8 +136,8 @@ char d, e, f, kartiba;
 	
 	
   printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z \n");
-  scanf (" %c", &k);
-   printf ("\n Programma kārtos %c rezima \n", kartiba);
+  scanf (" %c", &kartiba);
+  printf ("\n Programma kārtos %c rezima \n", kartiba);
    
     if (kartiba=='A' || 'a') {
       //Kārto augošā secībā
@@ -176,49 +176,49 @@ char d, e, f, kartiba;
           token_beigas = d;
           
       }
-    printf ("augošā secībā: mazākais= %d vidējais= %d lielākais= %d \n", token_small, token_middle, token_big);
+   printf ("Alfabēta secībā: %c   %c  %c \n", token_sakums, token_vidus, token_beigas);
   }
   
-  else if (seciba==0)
+  else if (kartiba=='Z' || 'z')
   {
       //Kārto dilstošā secībā
       
-      if (a <= b && b <= c) {
-          token_small = a;
-          token_middle = b;
-          token_big = c;
+      if ((int)d <= (int)e && (int)e <= (int)f) {
+          token_sakums = d;
+          token_vidus = e;
+          token_beigas = f;
       }
-      else if (a <= b && b > c) {
-          token_small = a;
-          token_middle = c;
-          token_big = b;
+      else if ((int)d <= (int)e && (int)e > (int)f) {
+          token_sakums = d;
+          token_vidus = f;
+          token_beigas = e;
           
       } 
-      else if (b < a && a <= c) {
-          token_small = b;
-          token_middle = a;
-          token_big = c;
+      else if ((int)e <= (int)d && (int)d < (int)f) {
+          token_sakums = e;
+          token_vidus = d;
+          token_beigas = f;
           
       }
-      else if (b < a && a > c) {
-          token_small = b;
-          token_middle = c;
-          token_big = a;
+      else if ((int)e <= (int)d && (int)d > (int)f) {
+          token_sakums = e;
+          token_vidus = f;
+          token_beigas = d;
           
       }  
-      else if (c < a && a <= b) {
-          token_small = c;
-          token_middle = a;
-          token_big = b;
+      else if ((int)f <= (int)d && (int)d < (int)e) {
+          token_sakums = f;
+          token_vidus = d;
+          token_beigas = e;
           
       }
-      else if (c < a && a > b) {
-          token_small = c;
-          token_middle = b;
-          token_big = a;
+      else if ((int)f <= (int)e && (int)d > (int)e) {
+          token_sakums = f;
+          token_vidus = e;
+          token_beigas = d;
           
       }
-    printf ("dilstošā secībā: lielākais= %d vidējais= %d mazākais= %d \n", token_big, token_middle, token_small);
+    printf ("pretēji Alfabēta secībai: %c   %c  %c \n", token_beigas, token_vidus, token_sakums);
       
   }
   // Ja programmas loģikā ir tomēr kļūda, vai nekorekti ievadīta vērtība, piemēram, ievadīts burts vai simbols,
