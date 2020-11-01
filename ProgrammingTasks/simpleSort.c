@@ -1,11 +1,3 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
 int main ()
 {
@@ -112,7 +104,8 @@ int main ()
     printf ("dilstošā secībā: lielākais =%d vidējais=%d mazākais=%d \n", token_big, token_middle, token_small);
       
   }
-  // Ja programmas loģikā ir tomēr kļūda, vai nekorekti ievadīta vērtība, paziņos par kļūdu
+  // Ja programmas loģikā ir tomēr kļūda, vai nekorekti ievadīta vērtība, piemēram, ievadīts burts vai simbols,
+  // paziņos par kļūdu
   else {printf("Programmā ir ielavījusies kļūda!");}
   
   
