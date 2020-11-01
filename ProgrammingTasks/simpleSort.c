@@ -123,7 +123,8 @@ int main ()
   char token_sakums, token_vidus, token_beigas;
   
 
-  printf ("Ievadiet burtu\n");
+  printf ("\nUzdevuma otrā daļa\n");	
+  printf ("\nIevadiet burtu\n");
 
   scanf (" %c", &d);
   
@@ -146,7 +147,6 @@ int main ()
     if (kartiba=='A' || kartiba=='a') {
       //Kārto alfabēta secībā
       
-      printf("Te nav jaiet");
       if ((int)d <= (int)e && (int)e <= (int)f) {
           token_sakums = d;
           token_vidus = e;
@@ -233,6 +233,8 @@ int main ()
   else {printf("Programmā ir ielavījusies kļūda!");
       
   }
+	
+	printf("\n Programma beidz darbu!");
   
   return 0;
 }
