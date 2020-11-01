@@ -66,7 +66,7 @@ int main ()
   }
   else {printf("Programmā ir ielavījusies kļūda!");}
   
-  printf ("c =%d b=%d a=%d", token_big, token_middle, token_small);
+  printf ("augošā secībā: lielākais =%d vidējais=%d mazākais=%d", token_small, token_middle, token_big);
 
   return 0;
 }
