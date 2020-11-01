@@ -146,7 +146,7 @@ int main ()
           token_vidus = e;
           token_beigas = f;
       }
-      else if ((int)d <= (int)e && (int)e > (int)f) {
+      else if ((int)d <= (int)f && (int)f < (int)e) {
           token_sakums = d;
           token_vidus = f;
           token_beigas = e;
@@ -158,19 +158,19 @@ int main ()
           token_beigas = f;
           
       }
-      else if ((int)e <= (int)d && (int)d > (int)f) {
+      else if ((int)e < (int)f && (int)f < (int)d) {
           token_sakums = e;
           token_vidus = f;
           token_beigas = d;
           
       }  
-      else if ((int)f <= (int)d && (int)d < (int)e) {
+      else if ((int)f < (int)d && (int)d < (int)e) {
           token_sakums = f;
           token_vidus = d;
           token_beigas = e;
           
       }
-      else if ((int)f <= (int)e && (int)d > (int)e) {
+      else if ((int)f < (int)e && (int)e < (int)d) {
           token_sakums = f;
           token_vidus = e;
           token_beigas = d;
@@ -183,42 +183,42 @@ int main ()
   {
       //Kārto dilstošā secībā
       
-      if ((int)d <= (int)e && (int)e <= (int)f) {
+      if ((int)d >= (int)e && (int)e >= (int)f) {
           token_sakums = d;
           token_vidus = e;
           token_beigas = f;
       }
-      else if ((int)d <= (int)e && (int)e > (int)f) {
+      else if ((int)d >= (int)f && (int)f > (int)e) {
           token_sakums = d;
           token_vidus = f;
           token_beigas = e;
           
       } 
-      else if ((int)e <= (int)d && (int)d < (int)f) {
+      else if ((int)e >= (int)d && (int)d > (int)f) {
           token_sakums = e;
           token_vidus = d;
           token_beigas = f;
           
       }
-      else if ((int)e <= (int)d && (int)d > (int)f) {
+      else if ((int)e > (int)f && (int)f > (int)d) {
           token_sakums = e;
           token_vidus = f;
           token_beigas = d;
           
       }  
-      else if ((int)f <= (int)d && (int)d < (int)e) {
+      else if ((int)f > (int)d && (int)d > (int)e) {
           token_sakums = f;
           token_vidus = d;
           token_beigas = e;
           
       }
-      else if ((int)f <= (int)e && (int)d > (int)e) {
+      else if ((int)f > (int)e && (int)e > (int)d) {
           token_sakums = f;
           token_vidus = e;
           token_beigas = d;
           
       }
-    printf ("pretēji Alfabēta secībai: %c   %c  %c \n", token_beigas, token_vidus, token_sakums);
+    printf ("pretēji Alfabēta secībai: %c   %c  %c \n", token_sakums, token_vidus, token_beigas);
       
   }
   // Ja programmas loģikā ir tomēr kļūda, vai nekorekti ievadīta vērtība, piemēram, ievadīts burts vai simbols,
