@@ -3,6 +3,8 @@ int main ()
 {
   int a, b, c, seciba;
   int token_big, token_middle, token_small;
+  
+  // Pirmā programmas daļa kārto decimālskaitļus
 
   printf ("Ievadiet decimālskaitli\n");
 
@@ -58,7 +60,7 @@ int main ()
           token_small = a;
           
       }
-    printf ("augošā secībā: mazākais =%d vidējais=%d lielākais=%d \n", token_small, token_middle, token_big);
+    printf ("augošā secībā: mazākais= %d vidējais= %d lielākais= %d \n", token_small, token_middle, token_big);
 
   }
   
@@ -101,12 +103,39 @@ int main ()
           token_big = a;
           
       }
-    printf ("dilstošā secībā: lielākais =%d vidējais=%d mazākais=%d \n", token_big, token_middle, token_small);
+    printf ("dilstošā secībā: lielākais= %d vidējais= %d mazākais= %d \n", token_big, token_middle, token_small);
       
   }
   // Ja programmas loģikā ir tomēr kļūda, vai nekorekti ievadīta vērtība, piemēram, ievadīts burts vai simbols,
   // paziņos par kļūdu
-  else {printf("Programmā ir ielavījusies kļūda!");}
+  else {printf("Programmā ir ielavījusies kļūda!");
+      
+  }
+  
+  
+  // Otrā programmas daļa kārto burtus
+
+  char d, e, f, kartiba;
+  char token_jaunakais, token_videjais, token_vecakais;
+  
+
+  printf ("Ievadiet burtu\n");
+
+  scanf ("%c", &d);
+  
+  printf ("Ievadiet burtu\n");
+
+  scanf ("%c", &e);
+  
+  printf ("Ievadiet burtu\n");
+
+  scanf ("%c", &f);
+	
+	
+  printf ("Jūs ievadījāt, a = %c b = %c c = %c \n", d,e,f);
+  printf ("Lai kārtotu alfabēta secībā ievadiet burtu A \n");
+  printf ("Lai kārtotu pretēji alfabēta secībai ievadiet burtu Z \n");
+  scanf ("%c", &kartiba);
   
   
   return 0;
