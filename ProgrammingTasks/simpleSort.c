@@ -34,7 +34,7 @@ int main ()
           token_middle = b;
           token_small = c;
       }
-      else if (a >= c && c > b) {
+      else if (a >= c && c >= b) {
           token_big = a;
           token_middle = c;
           token_small = b;
@@ -78,31 +78,31 @@ int main ()
           token_middle = b;
           token_big = c;
       }
-      else if (a <= c && c < b) {
+      else if (a <= c && c <= b) {
           token_small = a;
           token_middle = c;
           token_big = b;
           
       } 
-      else if (b <= a && a < c) {
+      else if (b <= a && a <= c) {
           token_small = b;
           token_middle = a;
           token_big = c;
           
       }
-      else if (b < c && c < a) {
+      else if (b <= c && c <= a) {
           token_small = b;
           token_middle = c;
           token_big = a;
           
       }  
-      else if (c < a && a < b) {
+      else if (c <= a && a <= b) {
           token_small = c;
           token_middle = a;
           token_big = b;
           
       }
-      else if (c < b && b < a) {
+      else if (c <= b && b <= a) {
           token_small = c;
           token_middle = b;
           token_big = a;
@@ -154,19 +154,19 @@ int main ()
           token_vidus = e;
           token_beigas = f;
       }
-      else if ((int)d <= (int)f && (int)f < (int)e) {
+      else if ((int)d <= (int)f && (int)f <= (int)e) {
           token_sakums = d;
           token_vidus = f;
           token_beigas = e;
           
       } 
-      else if ((int)e <= (int)d && (int)d < (int)f) {
+      else if ((int)e <= (int)d && (int)d <= (int)f) {
           token_sakums = e;
           token_vidus = d;
           token_beigas = f;
           
       }
-      else if ((int)e < (int)f && (int)f < (int)d) {
+      else if ((int)e <= (int)f && (int)f <= (int)d) {
           token_sakums = e;
           token_vidus = f;
           token_beigas = d;
@@ -178,7 +178,7 @@ int main ()
           token_beigas = e;
           
       }
-      else if ((int)f < (int)e && (int)e < (int)d) {
+      else if ((int)f <= (int)e && (int)e <= (int)d) {
           token_sakums = f;
           token_vidus = e;
           token_beigas = d;
@@ -197,31 +197,31 @@ int main ()
           token_vidus = e;
           token_beigas = f;
       }
-      else if ((int)d >= (int)f && (int)f > (int)e) {
+      else if ((int)d >= (int)f && (int)f >= (int)e) {
           token_sakums = d;
           token_vidus = f;
           token_beigas = e;
           
       } 
-      else if ((int)e >= (int)d && (int)d > (int)f) {
+      else if ((int)e >= (int)d && (int)d >= (int)f) {
           token_sakums = e;
           token_vidus = d;
           token_beigas = f;
           
       }
-      else if ((int)e > (int)f && (int)f > (int)d) {
+      else if ((int)e >= (int)f && (int)f >= (int)d) {
           token_sakums = e;
           token_vidus = f;
           token_beigas = d;
           
       }  
-      else if ((int)f > (int)d && (int)d > (int)e) {
+      else if ((int)f >= (int)d && (int)d >= (int)e) {
           token_sakums = f;
           token_vidus = d;
           token_beigas = e;
           
       }
-      else if ((int)f > (int)e && (int)e > (int)d) {
+      else if ((int)f >= (int)e && (int)e >= (int)d) {
           token_sakums = f;
           token_vidus = e;
           token_beigas = d;
