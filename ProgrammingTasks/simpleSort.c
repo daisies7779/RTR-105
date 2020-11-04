@@ -40,25 +40,25 @@ int main ()
           token_small = b;
           
       } 
-      else if (b >= a && a > c) {
+      else if (b >= a && a >= c) {
           token_big = b;
           token_middle = a;
           token_small = c;
           
       }
-      else if (b > c && c > a) {
+      else if (b >= c && c >= a) {
           token_big = b;
           token_middle = c;
           token_small = a;
           
       }  
-      else if (c > a && a > b) {
+      else if (c >= a && a >= b) {
           token_big = c;
           token_middle = a;
           token_small = b;
           
       }
-      else if (c > b && b > a) {
+      else if (c >= b && b >= a) {
           token_big = c;
           token_middle = b;
           token_small = a;
