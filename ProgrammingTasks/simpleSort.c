@@ -58,7 +58,7 @@ int main ()
           token_small = b;
           
       }
-      else if (c > b && b > c) {
+      else if (c > b && b > a) {
           token_big = c;
           token_middle = b;
           token_small = a;
