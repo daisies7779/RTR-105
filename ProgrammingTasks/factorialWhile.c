@@ -1,4 +1,3 @@
-  
 #include <stdio.h>
 int main() {
     int n, i;
@@ -7,6 +6,7 @@ int main() {
     scanf("%d", &n);
 
     // rāda kļūdu, ja ievadīts negatīvs skaitlis
+    i=1;
     if (n < 0)
         printf("Faktoriāls no negatīva skaitļa neeksistē");
     else {
