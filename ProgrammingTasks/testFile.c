@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     
-    // lietotaja ievadits deicmalskaitlis, tiek pienemts ka tas nebus parak liels, dēļ ierobežotās skaitļošanas jaudas
+    // lietotaja ievadits deicmalskaitlis
     int i;
     
     // izvēlētais aprēķināmā faktoriāla datu tips
@@ -12,9 +12,15 @@ int main() {
     
     printf("Ievadiet decimālskaitli, lielāku vai vienādu ar nulle: ");
     scanf("%d", &i);
+    
+    //nav pretrunas ar uzdevuma nosacījumiem, jo FAKTORIĀLA vērtība ar nulli netiek salīdzināt. Tā vispār netiek rēķināta, 
+    //jo negatīvs skaitlis neitilpst definīcijas apgabalā.
+    if(i<0){printf("No negatīva skaitļa faktoriālu nerēķina!"); return 0;}
   
     printf("Izvelieties faktoriala datu tipu - c (char), i (int), l (long long int): ");
     scanf(" %c", &tips);
+  
+  
   
   
    if (tips == 'c') 
