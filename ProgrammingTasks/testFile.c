@@ -8,9 +8,9 @@ int main() {
     char tips;
     
     //ja mazāks par kluda, tad pec salidzinasanas operacijas, secinas ka ir kluda.
-    long long kluda = 0;
+    long long kluda;
     
-    printf("Ievadiet veselu decimālskaitli: ");
+    printf("Ievadiet decimālskaitli, lielāku vai vienādu ar nulle: ");
     scanf("%d", &i);
   
     printf("Izvelieties faktoriala datu tipu - c (char), i (int), l (long long int): ");
@@ -20,6 +20,7 @@ int main() {
    if (tips == 'c') 
    {
      char fact = 1;
+     kluda = 0;
      printf("\nIegaja CHAR\n");
      
      for (i; i>=1; i--)
@@ -27,23 +28,33 @@ int main() {
        
        printf("vertiba %d \n", fact);
        fact *= i;
+       if (fact < kluda) {printf("Char datu tipam faktoriālu nevar aprēķināt"); break;}
+       kluda = fact;
        
      }
-     
+   //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
+   // kļūdas gadījumā, lai var redzēt, ka tiešām kaut kas ne tā aizgāja.
   printf("\nFaktoriāls = %d",  fact);
      
    }
 
   else if (tips == 'i') 
   {
-      int fact = 1;
-      for (i; i>=1; i--)
+     int fact = 1;
+     kluda = 0;
+     printf("\nIegaja INT\n");
+     
+     for (i; i>=1; i--)
      {
-       printf("Iegaja INT");
-       fact *= i;
+        printf("REIZINATAJS %d \n", i);
+       printf("vertiba %d \n", fact);
+       fact = fact*i;
+       if (fact < kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
+       kluda = fact;
        
      }
-    
+   //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
+   // kļūdas gadījumā, lai var redzēt, ka tiešām kaut kas ne tā aizgāja.
   printf("\nFaktoriāls = %d",  fact);
     
   }
@@ -51,15 +62,21 @@ int main() {
    else if (tips == 'l') 
   {
      long long fact = 1;
+     kluda = 0;
+     printf("\nIegaja LONG\n");
+     
      for (i; i>=1; i--)
      {
-       printf("Iegaja LONG");
-       fact *= i;
+       printf("REIZINATAJS %d \n", i);
+       printf("vertiba %lld \n", fact);
+       fact = fact*i;
+       if (fact < kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
+       kluda = fact;
        
      }
-     
+   //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
+   // kļūdas gadījumā, lai var redzēt, ka tiešām kaut kas ne tā aizgāja.
   printf("\nFaktoriāls = %lld",  fact);
-    
   }
   
   else {printf("Ievadiet korektu datu formātu!");}
