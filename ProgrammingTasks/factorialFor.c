@@ -34,6 +34,8 @@ int main() {
        
        printf("vertiba %d \n", fact);
        fact *= i;
+       // kluda satur iepriekšējo faktoriāla vērtību, savukārt
+       // ja tiks pārsniegt datu tips, tad mainīgais fact iegūst negatīvu vai mazāku vērtību par kluda
        if (fact < kluda) {printf("Char datu tipam faktoriālu nevar aprēķināt"); break;}
        kluda = fact;
        
