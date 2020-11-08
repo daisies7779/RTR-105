@@ -31,7 +31,7 @@ int main() {
      
      for (i; i>=1; i--)
      {
-       
+       printf("REIZINATAJS %d \n", i);
        printf("vertiba %d \n", fact);
        fact *= i;
        // kluda satur iepriekšējo faktoriāla vērtību, savukārt
@@ -54,7 +54,7 @@ int main() {
      
      for (i; i>=1; i--)
      {
-        printf("REIZINATAJS %d \n", i);
+       printf("REIZINATAJS %d \n", i);
        printf("vertiba %d \n", fact);
        fact = fact*i;
        if (fact < kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
