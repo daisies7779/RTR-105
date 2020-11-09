@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     
-    // lietotaja ievadits deicmalskaitlis
+    // lietotāja ievadīts decimālskaitlis
     int i;
     
     // izvēlētais aprēķināmā faktoriāla datu tips
