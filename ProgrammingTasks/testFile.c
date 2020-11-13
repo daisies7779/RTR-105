@@ -7,9 +7,6 @@ int main() {
     // izvēlētais aprēķināmā faktoriāla datu tips
     char tips;
     
-    //ja mazāks par kluda, tad pec salidzinasanas operacijas, secinas ka ir kluda.
-    long long kluda;
-    //long long ieprieks;
     
     printf("Ievadiet decimālskaitli, lielāku vai vienādu ar nulle: ");
     scanf("%d", &i);
@@ -27,28 +24,27 @@ int main() {
    if (tips == 'c') 
    {
      char fact = 1;
-     kluda = 0;
      char ieprieks =1;
      printf("\nIegaja CHAR\n");
      printf("Rekinam fact skailim %d \n", i);
      
+     // cikls rēķina fatkoriālu no beigām, lai ātrāk sasniegtu kritisko robežu
+     // tāpēc, piemēram, (n-1)! īstenībā nav faktoriāls bet tā atpakaļgaita, piem 9*8*7...
+     // tas nīzmē, ka kodā nav īsti korektu saukt fact par faktoriālu, kamēr  tas nav pilnībā izrēķināts,
+     //  taču šinī uzdevumā precīzai matemātiskai terminoloģijai nav principiālas nozīmes.
      for (i; i>=1; i--)
      {
        
        
        fact *= i;
-      printf("Vai n!/n ? (n-1)! %d \n", (fact/i)==ieprieks);
-      if ((fact/i)!=ieprieks) {printf("!!!!Char datu tipam faktoriālu nevar aprēķināt"); break;}
+      printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
+      // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
+      if ((fact/i)!=ieprieks) {printf("Char datu tipam faktoriālu nevar aprēķināt"); break;}
         
        ieprieks = fact;
-       printf("tekosa vertiba %d \n", fact);
-       printf("iepriekseja vertiba %d \n", ieprieks);
-       
-       
-       // kluda satur iepriekšējo faktoriāla vērtību, savukārt
-       // ja tiks pārsniegt datu tips, tad mainīgais fact iegūst negatīvu vai mazāku vērtību par kluda
-       if (fact < kluda) {printf("Char datu tipam faktoriālu nevar aprēķināt"); break;}
-       kluda = fact;
+       printf("tekosa vertiba n! %d \n", fact);
+       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);
+  
        
      }
    //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
@@ -59,17 +55,23 @@ int main() {
 
   else if (tips == 'i') 
   {
-     int fact = 1;
-     kluda = 0;
+     int  fact = 1;
+     int ieprieks =1;
      printf("\nIegaja INT\n");
+     printf("Rekinam fact skailim %d \n", i);
+     
      
      for (i; i>=1; i--)
      {
-       printf("REIZINATAJS %d \n", i);
-       printf("vertiba %d \n", fact);
-       fact = fact*i;
-       if (fact < kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
-       kluda = fact;
+      
+       fact *= i;
+      printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
+      // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
+      if ((fact/i)!=ieprieks) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
+        
+       ieprieks = fact;
+       printf("tekosa vertiba n! %d \n", fact);
+       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);
        
      }
    //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
@@ -80,17 +82,24 @@ int main() {
   
    else if (tips == 'l') 
   {
-     long long fact = 1;
-     kluda = 0;
+     
+     long long  fact = 1;
+     long long ieprieks =1;
      printf("\nIegaja LONG\n");
+     printf("Rekinam fact skailim %d \n", i);
+     
      
      for (i; i>=1; i--)
      {
-       printf("REIZINATAJS %d \n", i);
-       printf("vertiba %lld \n", fact);
-       fact = fact*i;
-       if (fact < kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
-       kluda = fact;
+      fact *= i;
+      printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
+      // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
+      if ((fact/i)!=ieprieks) {printf("Long datu tipam faktoriālu nevar aprēķināt"); break;}
+        
+       ieprieks = fact;
+       printf("tekosa vertiba n! %lld \n", fact);
+       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);
+       
        
      }
    //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
