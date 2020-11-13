@@ -39,11 +39,11 @@ int main() {
        fact *= i;
       printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
       // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
-      if ((fact/i)!=ieprieks) {printf("Char datu tipam faktoriālu nevar aprēķināt"); break;}
-        
+      if ((fact/i)!=ieprieks) {printf("Char datu tipam faktoriālu nevar aprēķināt\n Zemak redzam kļūdainais aprkēķins\n"); break;}
+      printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);    
        ieprieks = fact;
        printf("tekosa vertiba n! %d \n", fact);
-       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);
+       
   
        
      }
@@ -67,11 +67,11 @@ int main() {
        fact *= i;
       printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
       // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
-      if ((fact/i)!=ieprieks) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
-        
+      if ((fact/i)!=ieprieks) {printf("Int datu tipam faktoriālu nevar aprēķināt \nZemak redzam kļūdainais aprkēķins\n"); break;}
+     printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);    
        ieprieks = fact;
        printf("tekosa vertiba n! %d \n", fact);
-       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);
+      
        
      }
    //Arī kļūdas gadījumā rādīs aprēkināto vērtību, iemesls, kāpēc atstāju opciju redzēt vērtību arī   
@@ -94,11 +94,11 @@ int main() {
       fact *= i;
       printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
       // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
-      if ((fact/i)!=ieprieks) {printf("Long datu tipam faktoriālu nevar aprēķināt"); break;}
-        
+      if ((fact/i)!=ieprieks) {printf("Long datu tipam faktoriālu nevar aprēķināt\nZemak redzam kļūdainais aprkēķins\n"); break;}
+       printf("iepriekseja vertiba (n-1)! %lld \n", ieprieks);    
        ieprieks = fact;
        printf("tekosa vertiba n! %lld \n", fact);
-       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);
+      
        
        
      }
