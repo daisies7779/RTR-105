@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     
-    // lietotaja ievadits deicmalskaitlis
+    // lietotāja ievadīts decimālskaitlis
     int i;
     
     // izvēlētais aprēķināmā faktoriāla datu tips
@@ -9,6 +9,7 @@ int main() {
     
     //ja mazāks par kluda, tad pec salidzinasanas operacijas, secinas ka ir kluda.
     long long kluda;
+    long long ieprieks;
     
     printf("Ievadiet decimālskaitli, lielāku vai vienādu ar nulle: ");
     scanf("%d", &i);
@@ -27,13 +28,21 @@ int main() {
    {
      char fact = 1;
      kluda = 0;
+     ieprieks =i;
      printf("\nIegaja CHAR\n");
+     printf("Rekinam fact skailim %d \n", i);
      
      for (i; i>=1; i--)
      {
-       printf("REIZINATAJS %d \n", i);
-       printf("vertiba %d \n", fact);
+       
+       
        fact *= i;
+      printf("fact/ieprieks %d \n", fact==(ieprieks*i));
+       ieprieks = fact;
+       printf("tekosa vertiba %d \n", fact);
+       printf("iepriekseja vertiba %d \n", ieprieks);
+        
+       
        // kluda satur iepriekšējo faktoriāla vērtību, savukārt
        // ja tiks pārsniegt datu tips, tad mainīgais fact iegūst negatīvu vai mazāku vērtību par kluda
        if (fact < kluda) {printf("Char datu tipam faktoriālu nevar aprēķināt"); break;}
@@ -78,7 +87,7 @@ int main() {
        printf("REIZINATAJS %d \n", i);
        printf("vertiba %lld \n", fact);
        fact = fact*i;
-       if (fact/i != kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
+       if (fact < kluda) {printf("Int datu tipam faktoriālu nevar aprēķināt"); break;}
        kluda = fact;
        
      }
