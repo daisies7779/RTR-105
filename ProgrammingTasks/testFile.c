@@ -9,7 +9,7 @@ int main() {
     
     //ja mazāks par kluda, tad pec salidzinasanas operacijas, secinas ka ir kluda.
     long long kluda;
-    long long ieprieks;
+    //long long ieprieks;
     
     printf("Ievadiet decimālskaitli, lielāku vai vienādu ar nulle: ");
     scanf("%d", &i);
@@ -28,7 +28,7 @@ int main() {
    {
      char fact = 1;
      kluda = 0;
-     ieprieks =i;
+     char ieprieks =1;
      printf("\nIegaja CHAR\n");
      printf("Rekinam fact skailim %d \n", i);
      
@@ -37,11 +37,13 @@ int main() {
        
        
        fact *= i;
-      printf("fact/ieprieks %d \n", fact==(ieprieks*i));
+      printf("Vai n!/n ? (n-1)! %d \n", (fact/i)==ieprieks);
+      if ((fact/i)!=ieprieks) {printf("!!!!Char datu tipam faktoriālu nevar aprēķināt"); break;}
+        
        ieprieks = fact;
        printf("tekosa vertiba %d \n", fact);
        printf("iepriekseja vertiba %d \n", ieprieks);
-        
+       
        
        // kluda satur iepriekšējo faktoriāla vērtību, savukārt
        // ja tiks pārsniegt datu tips, tad mainīgais fact iegūst negatīvu vai mazāku vērtību par kluda
