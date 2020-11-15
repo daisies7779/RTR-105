@@ -32,17 +32,18 @@ int main() {
      // tāpēc, piemēram, (n-1)! īstenībā nav faktoriāls bet tā atpakaļgaita, piem 9*8*7...
      // tas nīzmē, ka kodā nav īsti korektu saukt fact par faktoriālu, kamēr  tas nav pilnībā izrēķināts,
      //  taču šinī uzdevumā precīzai matemātiskai terminoloģijai nav principiālas nozīmes.
-     for (i; i>=1; i--)
+     while (i>=1)
      {
        
        
-       fact *= i;
+      fact *= i;
       printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
       // Ja aprēķinātā n! dalījums ar n NAV VIENĀDS ar (n-1)! tad ir pārsniegta datu tipa robeža
       if ((fact/i)!=ieprieks) {printf("\nChar datu tipam faktoriālu nevar aprēķināt\n Zemak redzam kļūdainais aprkēķins"); break;}
       printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);    
        ieprieks = fact;
        printf("tekosa vertiba n! %d \n", fact);
+       i--;  
        
   
        
@@ -61,7 +62,7 @@ int main() {
      printf("Rekinam fact skailim %d \n", i);
      
      
-     for (i; i>=1; i--)
+     while (i>=1)
      {
       
        fact *= i;
@@ -71,6 +72,7 @@ int main() {
      printf("iepriekseja vertiba (n-1)! %d \n", ieprieks);    
        ieprieks = fact;
        printf("tekosa vertiba n! %d \n", fact);
+       i--;
       
        
      }
@@ -89,7 +91,7 @@ int main() {
      printf("Rekinam fact skailim %d \n", i);
      
      
-     for (i; i>=1; i--)
+     while (i>=1)
      {
       fact *= i;
       printf("Vai aprēķinātā n! dalījums ar n ir vienāds ar (n-1)!? %d \n", (fact/i)==ieprieks);
@@ -98,6 +100,7 @@ int main() {
        printf("iepriekseja vertiba (n-1)! %lld \n", ieprieks);    
        ieprieks = fact;
        printf("tekosa vertiba n! %lld \n", fact);
+       i--;
       
        
        
