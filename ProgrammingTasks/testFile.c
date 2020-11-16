@@ -17,6 +17,12 @@ void withArgumentNoReturn(char *myString){
     
 }
 
+const char* withArgumentWithReturn(char *myString){
+     return myString;
+     
+    
+}
+
 
 int main() {
     
@@ -25,7 +31,11 @@ int main() {
     
     printf("%s", noArgumentWithReturn());
     
-    char *argument = "3.Yes argument, no return! and tex you see is passed as a string argument to function! \n" ;
+    char *argument = "3.Yes argument, no return! Text you see is passed as a string argument to function and function itself prints it! \n" ;
     withArgumentNoReturn(argument);
+     
+    
+    printf("%s", withArgumentWithReturn("4.Yes argument, Yes return! Tex you see is passed as an argument to fuction, which returns it as a value, \nthen main() function prints it."));
+     
     return 0;
 }
