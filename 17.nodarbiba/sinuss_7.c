@@ -14,8 +14,8 @@ double mans_sinuss(double x){
    k++;
    a = a * (-1)*x*x/(4*(2*k)*(2*k+1));
    S = S+a;
-    if (k>49)
-   printf("%.2f\t%8.2f\t%8.2f\n", x, a,S); 
+    if (k>40)
+   printf("%d %.2f\t%8.2f\t%8.2f\n",k, x, a,S); 
   }
   
   return S;
