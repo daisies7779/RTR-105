@@ -8,13 +8,13 @@ double mans_sinuss(double x){
   
   a=pow(-1,k)*pow(x,2*k+1)/(2*1.);
   S=a;
-  printf("%.2f\t%8.2f\t%8.2f\n", x, a,S);
+  printf("%d %.2f\t%8.2f\t%8.2f\n", k, x, a,S);
   
-  while(k<50){
+  while(k<500){
    k++;
    a = a * (-1)*x*x/(4*(2*k)*(2*k+1));
    S = S+a;
-    if (k>40)
+    if ((k==1)||(k>499))
    printf("%d %.2f\t%8.2f\t%8.2f\n",k, x, a,S); 
   }
   
