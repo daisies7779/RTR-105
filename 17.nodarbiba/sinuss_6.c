@@ -19,3 +19,13 @@ double mans_sinuss(double x){
   return S;
   
 }
+
+void main(){
+  double x=2.05, y, yy;
+  y=sin(x);
+  printf("standarta funkcijas sin - y=sin(%.2f)=%.2f\n", x, y);
+  
+  yy=mans_sinuss(x);
+    printf("lietotaja funkcijas - y=mans_sinuss(%.2f)=%.2f\n", x, yy);
+
+}
