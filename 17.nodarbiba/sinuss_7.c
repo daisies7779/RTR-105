@@ -10,10 +10,11 @@ double mans_sinuss(double x){
   S=a;
   printf("%.2f\t%8.2f\t%8.2f\n", x, a,S);
   
-  while(k<3){
+  while(k<50){
    k++;
    a = a * (-1)*x*x/(4*(2*k)*(2*k+1));
    S = S+a;
+    if (k>49)
    printf("%.2f\t%8.2f\t%8.2f\n", x, a,S); 
   }
   
@@ -22,7 +23,7 @@ double mans_sinuss(double x){
 }
 
 void main(){
-  double x=2.05, y, yy;
+  double x=M_PI, y, yy;
   y=sin(x/2);
   printf("standarta funkcijas sin - y=sin(%.2f/2)=%.2f\n", x, y);
   
