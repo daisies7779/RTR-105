@@ -7,7 +7,7 @@ printf( "y=sin (%.2f )=%.2f\n" ,x, y ) ;
 
 a0 = pow(−1,0)∗pow(x, 2∗0+1) /(1.) ;
 S0 = a0 ;
-printf( "%.2f \ t%8.2f \ t%8.2f \n" ,x , a0 , S0) ;
+printf( "%.2f\t%8.2f\t%8.2f\n" ,x , a0 , S0) ;
 a1 = pow(−1,1)∗pow(x ,2∗1+1) /(1.∗1∗2∗3) ;
 S1 = a0 + a1 ;
 printf( "%.2 f\t%8.2 f\t%8.2f \n" ,x , a1 , S1) ;
