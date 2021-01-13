@@ -26,9 +26,13 @@ double mans_sinuss(double x){
 }
 
 void zimesana(double x){
-    printf(" ");
-    printf("\n sin(%.2f)",x);
-    printf("\t/");
+     
+     // 92 is \ backslahs ASCII value 47 / forwardslash
+    
+    printf("%12c\n",92);
+    printf("%13c    (-1) * x",92);
+    printf("\n sin(%.2f) = >   ______________",x);
+    printf("\n%13c    (-1) * x",47);
     
 }
 
