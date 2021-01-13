@@ -8,7 +8,7 @@ double mans_sinuss(double x){
   a=pow(-1,k)*pow(x,2*k+1)/(2*1.);
   S=a;
   
-  printf("Nr.\targuments\ta\tSumma\n");
+  printf("Nr.\targuments\ta\t Summa\n");
   printf("%3d %8.2f\t %8.4f\t %.2f\n",k, x, a,S); 
   
   
@@ -28,13 +28,13 @@ double mans_sinuss(double x){
 void main(){
   double x, y, yy;
   
-  printf("Sin/2 aprekinasana:\n");
-  printf("Ievadiet argumentu x (radianos):");
+  printf("Sin(x/2) aprekinasana:\n");
+  printf("Ievadiet argumentu x (radianos): ");
   scanf(" %lf", &x);
   
-  
-  yy=mans_sinuss(x);
   y=sin(x/2);
+  yy=mans_sinuss(x);
+  
   printf("\nstandarta funkcijas sin(x/2) y=sin(%.2f/2)=%.2f\n", x, y);
   printf("lietotaja funkcija y=mans_sinuss(%.2f/2)=%.2f\n", x, yy);
 
