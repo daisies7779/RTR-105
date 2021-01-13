@@ -28,11 +28,11 @@ double mans_sinuss(double x){
 void zimesana(double x){
      
      // 92 is \ backslahs ASCII value 47 / forwardslash
-    
+    //rekurences reizinatajs:  (-1)*x*x/(4*(2*k)*(2*k+1));
     printf("%12c\n",92);
-    printf("%13c    (-1) * x",92);
+    printf("%13c    (-1) * (0.5*x)",92);
     printf("\n sin(%.2f) = >   ______________",x);
-    printf("\n%13c    (-1) * x",47);
+    printf("\n%13c    (2*k+1)! * x",47);
     
 }
 
