@@ -26,13 +26,14 @@ double mans_sinuss(double x){
 
 void main(){
   double x, y, yy;
-  y=sin(x/2);
+  
   printf("Sin/2 aprekinasana:\n");
   printf("Ievadiet argumentu x (radianos):");
   scanf(" %lf99", &x);
-  printf("standarta funkcijas sin - y=sin(%.2f/2)=%.2f\n", x, y);
+  y=sin(x/2);
+  printf("standarta funkcijas sin(x/2) y=sin(%.2f/2)=%.2f\n", x, y);
   
   yy=mans_sinuss(x);
-    printf("lietotaja funkcijas - y=mans_sinuss(%.2f/2)=%.2f\n", x, yy);
+  printf("lietotaja funkcija y=mans_sinuss(%.2f/2)=%.2f\n", x, yy);
 
 }
