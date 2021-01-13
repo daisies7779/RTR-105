@@ -25,6 +25,11 @@ double mans_sinuss(double x){
   
 }
 
+void zimesana(double x){
+    printf("/");
+    
+}
+
 void main(){
   double x, y, yy;
   
@@ -37,5 +42,7 @@ void main(){
   
   printf("\nstandarta funkcijas sin(x/2) y=sin(%.2f/2)=%.2f\n", x, y);
   printf("lietotaja funkcija y=mans_sinuss(%.2f/2)=%.2f\n", x, yy);
+  
+  zimesana(x);
 
 }
