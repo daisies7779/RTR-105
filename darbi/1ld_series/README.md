@@ -1,2 +1,2 @@
-Šeit ir kods funkcijai sin(x/2);
+**Šeit ir kods funkcijai sin(x/2);**
 
