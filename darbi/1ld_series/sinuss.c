@@ -28,7 +28,8 @@ double mans_sinuss(double x){
 void zimesana(double x){
      
      // 92 is \ backslahs ASCII value 47 / forwardslash
-    //rekurences reizinatajs:  (-1)*x*x/(4*(2*k)*(2*k+1));
+     //  Teilora rindu funkcijai sin(x/2) 
+    printf("\n");
     printf("\n%17s", "k=500");
     printf("\n%17s", "-------");
     printf("\n%12c         k          2*k+1)",92);
@@ -38,6 +39,13 @@ void zimesana(double x){
     printf("\n%12c",47);
     printf("\n%17s", "-------");
     printf("\n%15s", "k=0");
+    
+    // Zime rekurences reizinatajs:  (-1)*x*x/(4*(2*k)*(2*k+1));
+    printf("\n");
+    printf("\n                                   2");
+    printf("\n                           (-1) * x");
+    printf("\nRekurences reizinatajs:  _______________");
+    printf("\n                         4*(2*k)*(2*k+1)");
     
 }
 
