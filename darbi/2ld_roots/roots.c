@@ -6,14 +6,25 @@ float modified_sin(float x, float A){
 }
 
 int main () {
-	float a=0.01, b=3*M_PI, x, delta_x=1.e-3, A=0, funkca, funkcb, funkcx;
+	//float a=0.01, b=3*M_PI, x, delta_x=1.e-3, A=0, funkca, funkcb, funkcx;
+	float a, b, x, delta_x, A, funkca, funkcb, funkcx;
 	int k=0;
+	
+	printf("Programma mekle sin(x/2)-A=0 sakni.\n");
+	printf("Ievadiet ZEMAKO robezu, ta nedrikst but nulle\n");
+	scanf(" %f", &a);
+	printf("Ievadiet AUGSTAKO robezu.\n");
+	scanf(" %f", &b);
+	printf("Ievadiet skaitli A: ");
+    scanf(" %f", &A);
+    printf("Ludzu ievadiet precizitati:");
+    scanf(" %f", &delta_x);
 	
 	funkca = modified_sin(a, A);
 	funkcb = modified_sin(b, A);
 	
 	if(funkca*funkcb>0){
-		printf("Intervala [%.2f;%.2f] sin(x) funkcijai", a,b);
+		printf("Intervala [%.2f;%.2f] sin(x) funkcijai ", a,b);
 		printf("saknju nav (vai taja ir para saknju skaits) \n");
 		return 1;
 	}
@@ -37,11 +48,11 @@ int main () {
 		//printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
 	}
 	
-	printf("sin(x/2)-A = 0, ja x = %lf\n",x);
-    printf("sin(x/2)=A, ja x = %lf un A = %lf\n",x, modified_sin(b,A)+A);
-    printf("Uzdevuma veikšanai vajadzeja %d iteracijas.\n",k);
+ 	printf("sin(x/2)-A = 0, ja x = %lf\n",x);
+    	printf("sin(x/2)=A, ja x = %lf un A = %lf\n",x, modified_sin(b,A)+A);
+    	printf("Uzdevuma veiksanai vajadzeja %d iteracijas.\n",k);
 	
- printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));//no pasniedzejas parauga
+ 	printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));//no pasniedzejas parauga
 	
  return 0;
  }
