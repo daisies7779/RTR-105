@@ -1,3 +1,4 @@
+  
 #include<stdio.h>
 #include<math.h>
 
@@ -10,15 +11,15 @@ int main () {
 	float a, b, x, delta_x, A, funkca, funkcb, funkcx;
 	int k=0;
 	
-	printf("Programma mekle sin(x/2)-A=0 sakni.\n");
+	printf("Programma mekle sin(x/2)=A sakni.\n");
 	printf("Ievadiet ZEMAKO robezu, ta nedrikst but nulle\n");
 	scanf(" %f", &a);
 	printf("Ievadiet AUGSTAKO robezu.\n");
 	scanf(" %f", &b);
 	printf("Ievadiet skaitli A: ");
-    scanf(" %f", &A);
-    printf("Ludzu ievadiet precizitati:");
-    scanf(" %f", &delta_x);
+        scanf(" %f", &A);
+        printf("Iievadiet precizitati:");
+        scanf(" %f", &delta_x);
 	
 	funkca = modified_sin(a, A);
 	funkcb = modified_sin(b, A);
@@ -29,8 +30,8 @@ int main () {
 		return 1;
 	}
 	
-	printf("               sin(%7.3f)=%7.3f\t\t\t\t", a,modified_sin(a,A));
-	printf("sin(%7.3f)=%7.3f\n",b, modified_sin(b,A));
+	//printf("               sin(%7.3f)=%7.3f\t\t\t\t", a,modified_sin(a,A));
+	//printf("sin(%7.3f)=%7.3f\n",b, modified_sin(b,A));
 	
 	while((b-a)>delta_x){
 		k++;
@@ -48,11 +49,12 @@ int main () {
 		//printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
 	}
 	
- 	printf("sin(x/2)-A = 0, ja x = %lf\n",x);
-    	printf("sin(x/2)=A, ja x = %lf un A = %lf\n",x, modified_sin(b,A)+A);
-    	printf("Uzdevuma veiksanai vajadzeja %d iteracijas.\n",k);
+    printf("\nsin(x/2)= %lf, ja x = %lf ar lietotaja uzdoto precizitati %lf\n", A, x, delta_x);
+    printf("funkcijas sin(x/2) vertiba sada gadijuma ir sin(%lf/2)=%lf\n",x, sin(x/2.));
+    printf("Aprekina kluda ar sadu rekinasanas metodi sin(x/2)-A ir: %lf\n\n", modified_sin(x,A));
+    printf("Uzdevuma veiksanai vajadzeja %d iteracijas.\n",k);
+    //printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));//no pasniedzejas parauga
 	
- 	printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));//no pasniedzejas parauga
-	
+
  return 0;
  }
