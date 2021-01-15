@@ -6,7 +6,7 @@ float modified_sin(float x, float A){
 }
 
 int main () {
-	float a=0.01, b=1.5*M_PI, x, delta_x=1.e-3, A=1, funkca, funkcb, funkcx;
+	float a=0.01, b=3*M_PI, x, delta_x=1.e-3, A=0, funkca, funkcb, funkcx;
 	int k=0;
 	
 	funkca = modified_sin(a, A);
@@ -32,12 +32,12 @@ int main () {
 			b=x;
 		}
 		
-		printf("%2d. iteracija: sin(%7.3f)=%7.3f\t", k,a,modified_sin(a,A));
-		printf("sin(%7.3f)=%7.3f\t", x,modified_sin(x,A));
-		printf("sin(%7.3f)=%7.3f\n", b,modified_sin(b,A));
+		printf("%2d. iteracija: sin(%7.3f/2)-A=%7.3f\t", k,a,modified_sin(a,A));
+		printf("sin(%7.3f/2)-A=%7.3f\t", x,modified_sin(x,A));
+		printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
 	}
 	
- printf("Sakne atrodas pie x=%.3f, jo sin(x) ir %.3f\n", x,modified_sin(x,A));
+ printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));
 	
  return 0;
  }
