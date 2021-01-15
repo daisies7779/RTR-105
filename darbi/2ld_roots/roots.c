@@ -17,9 +17,9 @@ int main () {
 	printf("Ievadiet AUGSTAKO robezu.\n");
 	scanf(" %f", &b);
 	printf("Ievadiet skaitli A: \n");
-    scanf(" %f", &A);
-    printf("Iievadiet precizitati:\n");
-    scanf(" %f", &delta_x);
+        scanf(" %f", &A);
+       printf("Iievadiet precizitati:\n");
+       scanf(" %f", &delta_x);
 	
 	funkca = modified_sin(a, A);
 	funkcb = modified_sin(b, A);
