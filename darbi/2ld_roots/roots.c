@@ -2,7 +2,7 @@
 #include<math.h>
 
 float modified_sin(float x, float A){
-	return sin(x)-A;
+	return sin(x/2)-A;
 }
 
 int main () {
