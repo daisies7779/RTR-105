@@ -16,10 +16,10 @@ int main () {
 	scanf(" %f", &a);
 	printf("Ievadiet AUGSTAKO robezu.\n");
 	scanf(" %f", &b);
-	printf("Ievadiet skaitli A: ");
-        scanf(" %f", &A);
-        printf("Iievadiet precizitati:");
-        scanf(" %f", &delta_x);
+	printf("Ievadiet skaitli A: \n");
+    scanf(" %f", &A);
+    printf("Iievadiet precizitati:\n");
+    scanf(" %f", &delta_x);
 	
 	funkca = modified_sin(a, A);
 	funkcb = modified_sin(b, A);
