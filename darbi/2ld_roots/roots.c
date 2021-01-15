@@ -32,12 +32,16 @@ int main () {
 			b=x;
 		}
 		
-		printf("%2d. iteracija: sin(%7.3f/2)-A=%7.3f\t", k,a,modified_sin(a,A));
-		printf("sin(%7.3f/2)-A=%7.3f\t", x,modified_sin(x,A));
-		printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
+		//printf("%2d. iteracija: sin(%7.3f/2)-A=%7.3f\t", k,a,modified_sin(a,A));
+		//printf("sin(%7.3f/2)-A=%7.3f\t", x,modified_sin(x,A));
+		//printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
 	}
 	
- printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));
+	printf("sin(x/2)-A = 0, ja x = %lf\n",x);
+    printf("sin(x/2)=A, ja x = %lf un A = %lf\n",x, modified_sin(b,A)+A);
+    printf("Uzdevuma veikšanai vajadzeja %d iteracijas.\n",k);
+	
+ printf("Sakne atrodas pie x=%.3f, jo sin(x/2)-A ir %.3f\n", x,modified_sin(x,A));//no pasniedzejas parauga
 	
  return 0;
  }
