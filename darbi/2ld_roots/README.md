@@ -2,6 +2,10 @@
 # sin(x/2)=A aprēķins, izmantojot dihotomijas metodi
 #### Darba uzdevums
 Izstrādāt programmu, kura aprēķina sin(x/2)=A pēc lietotāja uzdotiem parametriem, attēlot tās grafiku ar gnuplot rīka palīdzību.
+#### Esošo failu funkcionālās atšķirības
+fails roots.c realizē visu prasīto programmas funkcionalitāti, bez datu saglabāšanas
+fails roots_dati.c satur papildkodu, kurš saglabā ģenerētos datus failā dati.txt
+
 #### Uzdevuma matemātiskā analīze
 Svarīgi saprast ka funkcijas:
 1) sin(x/2)=A
