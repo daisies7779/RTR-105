@@ -12,6 +12,7 @@ int main () {
 	int k=0;
 	
 	printf("Programma mekle sin(x/2)=A sakni.\n");
+	printf("Butiba sakne ir 2*arcsin(A)=x !\n");
 	printf("Ievadiet ZEMAKO robezu, ta nedrikst but nulle\n");
 	scanf(" %f", &a);
 	printf("Ievadiet AUGSTAKO robezu.\n");
