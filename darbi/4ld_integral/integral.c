@@ -30,12 +30,33 @@ void integralTrapece(double a, double b, double iedalja)
 
 void integralSimpson(double a, double b, double iedalja, int n)
 {
+      //Simspon metode sakums
+    double h2, sum1,  intergral;
+    int i1, x1;
+   h2=fabs(b-a)/n;
+  for(i1=1;i1<n;i1++){
+    x1=a+i1*h2;
+    if(i1%2==0){
+      sum1=sum1+2*sin(x1/2);
+    }
+    else{
+      sum1=sum1+4*sin(x1/2);
+    }
+  }
+  intergral=(h2/3)*(sin(a/2)+sin(b/2)+sum1);
+  printf("Simpsonas metodes intergrala vertiba : %f\n",intergral);
+  //beigas
+}
+
+/*
+void integralSimpson(double a, double b, double iedalja, int n)
+{
     //avots
     //https://www.bragitoff.com/2017/08/simpsons-13-rule-c-program/#:~:text=Simpson's%20Rule%20is%20a%20Numerical,function%20within%20a%20given%20interval.&text=And%20the%20area%20is%20then,the%20better%20is%20the%20approximation.
     
     double h, x, sum, integralis;
     int i;
-    /*Begin Simpson's Procedure: */
+    /*Begin Simpson's Procedure: 
   h=fabs(b-a)/n;
   for(i=1;i<n;i++){
     x=a+i*h;
@@ -49,8 +70,7 @@ void integralSimpson(double a, double b, double iedalja, int n)
   integralis=(h/3)*(sin(a/2)+sin(b/2)+sum);
     
     printf("Integralis, izmantojot Simpsona 1/3 metodi, ir %lf", integralis);   
-}
-
+} */
 
 
 /*simpIntegral(a,b,increment, n);
