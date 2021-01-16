@@ -1,7 +1,7 @@
 
 
 ### funkcijas grafiks
-  ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/2ld_roots/arcsin05.png?raw=true)
+  ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/3ld_derivative/atvasinajumi.png)
 
 [Izdrukas fails](https://github.com/daisies7779/RTR-105/blob/master/darbi/3ld_derivative/derivative.dat)
 ```
