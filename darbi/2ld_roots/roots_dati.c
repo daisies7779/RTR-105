@@ -16,9 +16,9 @@ int main () {
 	printf("Ievadiet AUGSTAKO robezu.\n");
 	scanf(" %f", &b);
 	printf("Ievadiet skaitli A: \n");
-        scanf(" %f", &A);
-       printf("Iievadiet precizitati:\n");
-       scanf(" %f", &delta_x);
+    scanf(" %f", &A);
+    printf("Ievadiet precizitati:\n");
+    scanf(" %f", &delta_x);
 	
 	funkca = modified_sin(a, A);
 	funkcb = modified_sin(b, A);
@@ -31,6 +31,12 @@ int main () {
 	
 	//printf("               sin(%7.3f)=%7.3f\t\t\t\t", a,modified_sin(a,A));
 	//printf("sin(%7.3f)=%7.3f\n",b, modified_sin(b,A));
+	
+	//Fails datu rakstisanai prieks gnuplot
+	FILE * printFile;
+ 	printFile = fopen("data.txt\n","w");
+ 	fprintf(printFile,"# So failu sauc data.txt\n");
+ 	fprintf(printFile,"# funkcija sin(x/2)-%f\n# x\t\t\t\t# y\n", A);
 	
 	while((b-a)>delta_x){
 		k++;
@@ -46,7 +52,12 @@ int main () {
 		//printf("%2d. iteracija: sin(%7.3f/2)-A=%7.3f\t", k,a,modified_sin(a,A));
 		//printf("sin(%7.3f/2)-A=%7.3f\t", x,modified_sin(x,A));
 		//printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
+		fprintf(printFile,"%.4f     %.4f\n",  x, modified_sin(x,A));
+	
 	}
+	
+	//Aizver datu failu
+	fclose(printFile);
 	
     printf("\nsin(x/2)= %lf, ja x = %lf ar lietotaja uzdoto precizitati %lf\n", A, x, delta_x);
     printf("funkcijas sin(x/2) vertiba sada gadijuma ir sin(%lf/2)=%lf\n",x, sin(x/2.));
