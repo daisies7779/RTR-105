@@ -15,5 +15,5 @@ if(a>b)
   }
   ```
    ### funkcijas grafiks
- (https://github.com/daisies7779/RTR-105/blob/master/darbi/2ld_roots/arcsin05.png?raw=true)
+  ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/2ld_roots/arcsin05.png?raw=true)
  
