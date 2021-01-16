@@ -2,6 +2,8 @@
 # sin(x/2)=A aprēķins, izmantojot dihotomijas metodi
 #### Darba uzdevums
 Izstrādāt programmu, kura aprēķina sin(x/2)=A pēc lietotāja uzdotiem parametriem, attēlot tās grafiku ar gnuplot rīka palīdzību.
+#### Uzdevuma matemātiskā analīze
+Būtībā sin(x/2)=A saknes atrašana nozīmē atrisināt funkciju 2*arcsin(A)=x, Būtībā Būtībāūtībā
 #### Kods, grafiks un to apraksts.
 Kods
 
