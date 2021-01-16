@@ -4,8 +4,11 @@ Datormācība(pamatkurss) elektroniskā klade
 
 user@epk428-15:~$ history
     1  VirtualBox --startvm XP
+    
     2  quartus
+    
     3  urm
+    
     4  cls
     5  ls -a
     6  ls 
