@@ -1,6 +1,6 @@
 [Izdrukas fails](https://github.com/daisies7779/RTR-105/blob/master/darbi/3ld_derivative/derivative.dat)
 ```
-# x	 sin(x/2) anal_sin'(x/2) difer_sin'(x/2) anal_sin''(x/2)  difer_sin''(x/2)
+# x	    sin(x/2)    anal_sin'(x/2)     difer_sin'(x/2)     anal_sin''(x/2)      difer_sin''(x/2)
 0.00	0.00		0.500			0.500			-0.0000			-0.0006
 0.01	0.00		0.500			0.500			-0.0012			-0.0019
 0.02	0.01		0.500			0.500			-0.0025			-0.0031
