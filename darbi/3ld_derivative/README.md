@@ -1,4 +1,5 @@
-
+#### 3. Laboratorijas darbs
+# sin(x/2) pirmās un otrās pakāpes atvasinājumi, izmantojot  analītiskās un diferenciāļa formulu.
 
 ### funkcijas grafiks
   ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/3ld_derivative/atvasinajumi.png)
