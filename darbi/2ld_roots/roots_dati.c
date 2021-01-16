@@ -16,7 +16,7 @@ int main () {
 	printf("Ievadiet AUGSTAKO robezu.\n");
 	scanf(" %f", &b);
 	printf("Ievadiet skaitli A: \n");
-    scanf(" %f", &A);
+        scanf(" %f", &A);
     printf("Ievadiet precizitati:\n");
     scanf(" %f", &delta_x);
 	
