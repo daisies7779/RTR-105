@@ -39,7 +39,7 @@ Dihotomijas metodei šo problēmu rada šī te koda daļa:
 	return sin(x/2)-A;
 }
    ```
-   un kā jau minēju sin(x/2)=0 nav ekvivalents sin(x/2)-A=A-A =>  sin(x/2)=A Bet Dihotomijas metode prezumē tieši šo ekvivalenci!
+   un kā jau minēju, dēļ inversās funkcijas definīcijas apgabala, sin(x/2)=0 nav ekvivalents sin(x/2)-A=A-A =>  sin(x/2)=A Bet Dihotomijas metode prezumē tieši šo ekvivalenci!
    
    Par to varam pārliecināties grafikā, kur atrastā sakne atrodas nevis uz oriģinālās funkcijas sin(x/2)-0.5 bet uz sin(x/2)
    
