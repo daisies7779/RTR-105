@@ -14,5 +14,5 @@ if(a>b)
     b=flip;
   }
   ```
-  
+  ![alt text](https://arcsin05.png?raw=true)
   [Izdrukas fails](https://github.com/ArtursZeibots/RTR105/blob/master/LD3/derative.dat)
