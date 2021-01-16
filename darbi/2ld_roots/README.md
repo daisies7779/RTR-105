@@ -7,3 +7,5 @@ if(a>b)
     b=flip;
   }
   ```
+  
+  [Izdrukas fails](https://github.com/ArtursZeibots/RTR105/blob/master/LD3/derative.dat)
