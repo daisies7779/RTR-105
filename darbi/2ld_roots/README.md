@@ -16,16 +16,13 @@ algoritms sakni neatradīs jo nenotiks zīmes maiņa!
 
 Piemēram y=sin(x/2) + 7 vienmēr atradīsies pozitīvajā y vērtību apgabalā!
 #### Kods, grafiks un to apraksts.
-Kods
-
-Šī daļa apgriež vērtības, ja tās ir ievadītas otrādi:
+Dihotomijas metodei kodā šo problēmu rada šī te koda daļa:
 ```c
-if(a>b)
-  {
-    double flip = a;
-    a=b;
-    b=flip;
-  }
+if(funkca*funkcb>0){
+		printf("Intervala [%.2f;%.2f] sin(x) funkcijai ", a,b);
+		printf("saknju nav (vai taja ir para saknju skaits) \n");
+		return 1;
+	}
   ```
    ### funkcijas grafiks
   ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/2ld_roots/arcsin05.png?raw=true)
