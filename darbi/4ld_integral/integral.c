@@ -28,6 +28,48 @@ void integralTrapece(double a, double b, double iedalja)
     printf("Integralis, izmantojot trapeces metodi, ir %lf\n", integralis);
 }
 
+void integralSimpson(double a, double b, double iedalja, int n)
+{
+    //avots
+    //https://www.bragitoff.com/2017/08/simpsons-13-rule-c-program/#:~:text=Simpson's%20Rule%20is%20a%20Numerical,function%20within%20a%20given%20interval.&text=And%20the%20area%20is%20then,the%20better%20is%20the%20approximation.
+    
+    double h, x, sum, integralis;
+    int i;
+    /*Begin Simpson's Procedure: */
+  h=fabs(b-a)/n;
+  for(i=1;i<n;i++){
+    x=a+i*h;
+    if(i%2==0){
+      sum=sum+2*sin(x/2);
+    }
+    else{
+      sum=sum+4*sin(x/2);
+    }
+  }
+  integralis=(h/3)*(sin(a/2)+sin(b/2)+sum);
+    
+    printf("Integralis, izmantojot Simpsona 1/3 metodi, ir %lf", integralis);   
+}
+
+
+
+/*simpIntegral(a,b,increment, n);
+void integralSimpson(double a, double b, double iedalja, int n)
+{
+    double integralis = 0;
+    double x;
+    int i;
+    for(i=0;i<n;i++);
+    {
+        integralis += 4*sin((a+i*iedalja)/2)+2*sin((a+(1+i)*iedalja)/2);
+    }
+    
+    integralis*=(1.0/3);
+    
+    printf("Integrālis izmantojot Simpsona 1/3 metodi ir %lf", integralis);
+    
+}*/
+
 
 int main(){
  double a, b, x, iedalja;
@@ -43,9 +85,9 @@ int main(){
  
  iedalja = (b-a)/n;
  
- //integralRectangle(a,b,iedalja);
+ integralRectangle(a,b,iedalja);
  integralTrapece(a,b,iedalja);
-// integralSimpson(a,b,iedalja);
+ integralSimpson(a,b,iedalja,n);
  
   return 0;
  
