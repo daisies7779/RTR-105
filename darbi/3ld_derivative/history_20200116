@@ -1,0 +1,29 @@
+  516  cd 3.nodarbība
+  517  ls
+  518  ls
+  519  cd darbi/
+  520  cd 3ld_derivative/
+  521  ls
+  522  cd ../..
+  523  git satus
+  524  git status
+  525  git add .
+  526  git commit -m "samazinata bilde"
+  527  git pugit pu
+  528  git pu
+  529  git push origin master
+  530  history > history_20200116
+  531  history > history_20200116.txt
+  532  ls
+  533  cd darbi/
+  534  cd 3ld_derivative/
+  535  history > history_20200116
+  536  status
+  537  git status
+  538  rm history_20200116
+  539  rm history_20200116.txt
+  540  history > history_20200116.txt
+  541  git add history_20200116.txt
+  542  git commit -m "pievienoju history"
+  543  git push origin master
+  544  history
