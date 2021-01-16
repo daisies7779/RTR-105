@@ -1,0 +1,500 @@
+   41  python application.py
+   42  python3 application.py
+   43  python3 application.py
+   44  python3 application.py
+   45  cd ..
+   46  ls
+   47  cd templates/
+   48  ls
+   49  ls
+   50  flask run
+   51  flask run
+   52  exit
+   53  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+   54  ls
+   55  cd src2
+   56  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+   57  cd src2
+   58  cd variables0/
+   59  flask run
+   60  flask run
+   61  python3
+   62  exit
+   63  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+   64  ls
+   65  sublime
+   66  sublime
+   67  ls
+   68  cd src2/
+   69  ls
+   70  cd variables0/
+   71  ls
+   72  flask app()
+   73  flask app
+   74  flask run
+   75  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+   76  ls
+   77  cd src2
+   78  ls
+   79  cd conditions/
+   80  ls
+   81  cat application.py 
+   82  flask run
+   83  flask run
+   84  flask run
+   85  flask run
+   86  flask run
+   87  flask run
+   88  flask run
+   89  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+   90  python3 import datetime
+   91  python3 print 'hi'
+   92  python3
+   93  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+   94  ls
+   95  cd src2
+   96  ls
+   97  cd templates/
+   98  ls
+   99  flask run
+  100  ls
+  101  cd templates/
+  102  ls
+  103  cat index.html 
+  104  cd ..
+  105  ls
+  106  cd ..
+  107  ls
+  108  cd inheritance/
+  109  ls
+  110  cd templates/
+  111  ls
+  112  cd ..
+  113  flask run
+  114  cd ../forms/
+  115  ls
+  116  flask run
+  117  flask run
+  118  flask run
+  119  run flask
+  120  flask run
+  121  flask run
+  122  flask run
+  123  flask run
+  124  flask run
+  125  flask run
+  126  flask run
+  127  cd ../notes
+  128  ls
+  129  cat application.py 
+  130  flask run
+  131  ls
+  132  flask run
+  133  python3 application.py
+  134  flask run
+  135  pip install Flask-Session
+  136  pip3 install flask-session
+  137  cd /c/eo/edx/Web\ Programming\ with\ Python\ and\ JavaScript/
+  138  cd src2/notes/
+  139  ls
+  140  flask run
+  141  flask run
+  142  flask run
+  143  flask run
+  144  flask run
+  145  flask run
+  146  flask run
+  147  flask run
+  148  flask run
+  149  flask run
+  150  flask run
+  151  flask run
+  152  flask run
+  153  flask run
+  154  flask run
+  155  flask run
+  156  flask run
+  157  flask run
+  158  exit
+  159  python2
+  160  python
+  161  python
+  162  python -version
+  163  python --version
+  164  python3 --version
+  165  python3
+  166  python37 --version
+  167  python3
+  168  python37
+  169  python34
+  170  pythong34 --version
+  171  pls
+  172  pws
+  173  ls
+  174  cd ..
+  175  cd .
+  176  ls
+  177  pwd
+  178  ls -a
+  179  cd usr
+  180  ls
+  181  python3
+  182  python34
+  183  cd ..
+  184  ls
+  185  cd /
+  186  cd usr
+  187  ls
+  188  cd etc
+  189  ls
+  190  cd /
+  191  ls
+  192  pwd
+  193  ls -a
+  194  cd etc
+  195  ls
+  196  ls -a
+  197  cat .bashrc
+  198  cat .bashrc.
+  199  ls
+  200  pwd
+  201  cd ~/etc
+  202  ls
+  203  pwd
+  204  cd ~
+  205  ls
+  206  pwd
+  207  ls -a
+  208  cat .bashrc
+  209  python --version
+  210  python3 --version
+  211  sublime
+  212  exit
+  213  python3 --version
+  214  python3 --versioin
+  215  python3 --version
+  216  exit
+  217  cd ~
+  218  ls -a
+  219  sublime .bashrc
+  220  pwd
+  221  ls -a
+  222  cd etc
+  223  ls -a
+  224  cd ..
+  225  ls -a
+  226  ~/.bashrc
+  227  ls
+  228  ls -a
+  229  pwd
+  230  cat .bashrc
+  231  cd ~
+  232  ls -a
+  233  cat .bashrc
+  234  cd /
+  235  cd /eo/
+  236  cd /c
+  237  cd eo
+  238  ce youtube/
+  239  cd youtube/
+  240  cd pythonCourse/
+  241  python3 helloWorld.py 
+  242  python3
+  243  python
+  244  python3 helloWorld.py 
+  245  python3 rating.py 
+  246  cd ~
+  247  ls -a
+  248  sublime .bashrc 
+  249  exit
+  250  cd C:\eo\youtube\pythonCourse
+  251  ls
+  252  cd /
+  253  ls
+  254  cd ~
+  255  ls
+  256  cd C:/
+  257  ls
+  258  cd eo
+  259  ls
+  260  cd youtube/
+  261  ls
+  262  cd pythonCourse/
+  263  ls
+  264  > file777.txt
+  265  ls
+  266  cat > file3333.txt
+  267  ls
+  268  cat file1.txt 
+  269  >> file1.txt 
+  270  cat file1.txt 
+  271  cat << EOF > fileNew.txt
+  272  first line
+  273  secont
+  274  third
+  275  EOF
+  276  cat fileNew.txt 
+  277  dd if=/dev/zero of=1G.test bs=1 count=0 seek=1G
+  278  ls
+  279  cat 1G.test 
+  280  fallocate -l 100M 1M.test
+  281  free -h
+  282  exit
+  283  exit
+  284  pip3 help check
+  285  pip3 help
+  286  pip3 search yandex money
+  287  pip3 search templates html
+  288  pip3 search templates
+  289  pip3 search html
+  290  pip3 help list
+  291  pip3 list
+  292  pip3 list -o
+  293  pip help show
+  294  pip3 show click
+  295  pip3 show flask
+  296  pip3 check
+  297  exit
+  298  echo adf
+  299  echo $SHELL
+  300  cd /usr/bin/bash
+  301  pwd
+  302  cd usr
+  303  pwd
+  304  cd bin
+  305  cd bash
+  306  ls -a
+  307  ls
+  308  ls -a
+  309  cat bash
+  310  echo $SHELL
+  311  clear
+  312  echo "hello, $USER. I wish to list some files of yours"
+  313  echo "listing files in the current directory, $PWD"
+  314  exit
+  315  whereis ls
+  316  whereis ls
+  317  pwd
+  318  ls -lt
+  319  ~
+  320  pwd
+  321  cd ~
+  322  ls
+  323  ls -lt
+  324  which gcc
+  325  gcc --version
+  326  apt-get install gcc
+  327  pacman --version
+  328  pacman -Syu
+  329  cd /
+  330  pwd
+  331  ls
+  332  cd c/
+  333  ls
+  334  cd RTU4
+  335  ls
+  336  cd Datormaciba/
+  337  ls
+  338  cd Majasdarbi/
+  339  ls
+  340  cd ..
+  341  ls
+  342  git clone https://github.com/daisies7779/RTR-105
+  343  ls
+  344  cd RTR-105/
+  345  ls
+  346  mkdir ProgrammingTasks
+  347  ls
+  348  cd ProgrammingTasks/
+  349  ls
+  350  touch multiplication.c
+  351  ls
+  352  nano multiplication.c 
+  353  cat multiplication.c 
+  354  nano multiplication.c 
+  355  cat multiplication.c 
+  356  cat multiplication.c 
+  357  nano multiplication.c 
+  358  nano multiplication.c 
+  359  cat multiplication.c 
+  360  nano multiplication.c 
+  361  cat multiplication.c 
+  362  pwd
+  363  cd ..
+  364  git status
+  365  git commit -m "Pievienots multiplication uzdevuma risinajums"
+  366  git add
+  367  git add .
+  368  git commit -m "Pievienots multiplication uzdevuma risinajums"
+  369  git status
+  370  git push
+  371  cd ..
+  372  rm RTR-105/
+  373  rm -r RTR-105/
+  374  ls
+  375  rm -fr RTR-105/
+  376  ls
+  377  git clone https://github.com/daisies7779/RTR-105
+  378  cd RTR-105/
+  379  ls
+  380  cd ProgrammingTasks/
+  381  LS
+  382  CAT multiplication.c 
+  383  touch dec2bin.c
+  384  nano dec2bin.c 
+  385  cat dec2bin.c 
+  386  pwd
+  387  ls
+  388  git add .
+  389  git commit 
+  390  git commit -m "dec to bin"
+  391  git push
+  392  ls
+  393  cd ..
+  394  cd ..
+  395  rm -rf RTR-105/
+  396  ls
+  397  Man tev tāds provokatīvs jautājums - vai tev ir kaut reiz bijis sex ar DIVIEM vīriešiem vienlaicīgi. Ja nē, vai būtu vēlme pamēģināt?
+  398  ssh -X -C p991REB037@213.175.92.15 -p 30022
+  399  ssh -X -C p991REB037@213.175.92.15 -p 30022
+  400  ssh -X -C p011RDB097@213.175.92.15 -p 30022
+  401  ssh -X -C p011RDB097@213.175.92.15 -p 30022
+  402  exit
+  403  cd C
+  404  ls
+  405  pwd
+  406  cd RTU4
+  407  cd RTU 1.1/
+  408  cd 1.1/
+  409  ls
+  410  cd Datormaciba/
+  411  ls
+  412  gcc
+  413  git clone https://github.com/daisies7779/RTR-105
+  414  ls
+  415  cd RTR-105/
+  416  ls
+  417  mkdir 17.nodarbiba
+  418  ls
+  419  cd 17.nodarbiba/
+  420  gcc --version
+  421  sudo apt update
+  422  sudo bash
+  423  sudo
+  424  pwd
+  425  cd ..
+  426  ls
+  427  mkdir darbi
+  428  ls
+  429  cd darbi/
+  430  ls
+  431  mkdir 1ld_series
+  432  mkdir 2ld_roots
+  433  mkdir 3ld_derivative
+  434  cd ..
+  435  ls
+  436  ls
+  437  cd darbi/
+  438  ls
+  439  cd 1
+  440  CD 1ld_series/
+  441  nano darbi/1ld_series/README.md
+  442  ls
+  443  cd 1ld_series/
+  444  ls
+  445  nano README.md
+  446  ls
+  447  history > history_20210112.txt
+  448  ls
+  449  cat history_20210112.txt 
+  450  cd ..
+  451  ls
+  452  cd ..
+  453  ls
+  454  git -upload
+  455  git commit
+  456  git commit -m "update mape darbi"
+  457  git add .
+  458  git commit -m "update mape darbi"
+  459  git push -u origin master
+  460  ls
+  461  cd darbi/
+  462  ls
+  463  cd 2ld_roots/
+  464  nano README.md
+  465  ls
+  466  nano README.md
+  467  nano README.md
+  468  cd ../3ld_derivative/
+  469  nano README.md
+  470  cd ..
+  471  cd ..
+  472  git add .
+  473  git commit -m "update mape darbi"
+  474  git push -u origin master
+  475  ls
+  476  cd 17.nodarbiba/
+  477  ls
+  478  notepad
+  479  ls
+  480  cat sinuss_1.txt 
+  481  cd ..\..
+  482  cd ../
+  483  git add .
+  484  git commit -m "update mape 17.nodarbiba"
+  485  git push -u origin master
+  486  exit
+  487  history
+  488  ls
+  489  history
+  490  cd ..
+  491  cd ..
+  492  cd ..
+  493  ls
+  494  rm -rf RTR-105/
+  495  cd ..
+  496  cd Datormaciba/
+  497  rm -rf RTR-105/
+  498  exit
+  499  cd c
+  500  cd rtu4
+  501  cd 1.1/
+  502  CD Datormaciba/
+  503  cd Datormaciba/
+  504  ls
+  505  rm -rf RTR-105/
+  506  git clone https://github.com/daisies7779/RTR-105
+  507  cd RTR-105/
+  508  git add .
+  509  git commit -m "grafiks derivatives"
+  510  git push origin master
+  511  git status
+  512  git pull upstream master
+  513  git remote add upstream https://github.com/daisies7779/RTR-105
+  514  git pull upstream master
+  515  ls
+  516  cd 3.nodarbība 
+  517  ls
+  518  ls
+  519  cd darbi/
+  520  cd 3ld_derivative/
+  521  ls
+  522  cd ../..
+  523  git satus
+  524  git status
+  525  git add .
+  526  git commit -m "samazinata bilde"
+  527  git pugit pu
+  528  git pu
+  529  git push origin master
+  530  history > history_20200116
+  531  history > history_20200116.txt
+  532  ls
+  533  cd darbi/
+  534  cd 3ld_derivative/
+  535  history > history_20200116
+  536  status
+  537  git status
+  538  rm history_20200116 
+  539  rm history_20200116.txt
+  540  history > history_20200116.txt
