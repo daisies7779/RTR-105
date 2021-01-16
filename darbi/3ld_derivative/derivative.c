@@ -3,8 +3,8 @@
 
 
 int main(){
- float a, b, x, delta_x, y, y_1_analitiski, y_1_diferencejot, y_2_analitiski, y_2_diferencejot, test;
- int k=0;
+ float a, b, x, delta_x, y, y_1_analitiski, y_1_diferencejot, y_2_analitiski, y_2_diferencejot;
+ 
  
  printf("Šī programma aprēķina sin(x/2) prim1, prim2,\n izmantojot gan analītisko formulu, gan diferenic.\n");
  printf("Ievadiet zemāko robežu: ");
