@@ -20,7 +20,8 @@ set ylabel 'y'
 set title 'Sakne pec dihotomijas metodes'
 
 
-plot [-3:4]  sin(x/2)-0.3,  "data.txt" using 1:2 title 'sakne' with linespoints
+
+plot [-3:4]  sin(x/2)-0.3,  "data.txt" using 1:2 title 'sakne x=0.664062 y=0.325964' with linespoints
 
 
 ======================
