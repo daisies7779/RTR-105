@@ -6,7 +6,7 @@ float modified_sin(float x, float A){
 }
 
 int main () {
-	//float a=0.01, b=3*M_PI, x, delta_x=1.e-3, A=0, funkca, funkcb, funkcx;
+	
 	float a, b, x, delta_x, A, funkca, funkcb, funkcx;
 	int k=0;
 	
@@ -30,8 +30,7 @@ int main () {
 		return 1;
 	}
 	
-	//printf("               sin(%7.3f)=%7.3f\t\t\t\t", a,modified_sin(a,A));
-	//printf("sin(%7.3f)=%7.3f\n",b, modified_sin(b,A));
+	
 	
 	//Fails datu rakstisanai prieks gnuplot
 	FILE * printFile;
@@ -49,10 +48,7 @@ int main () {
 		else {
 			b=x;
 		}
-		
-		//printf("%2d. iteracija: sin(%7.3f/2)-A=%7.3f\t", k,a,modified_sin(a,A));
-		//printf("sin(%7.3f/2)-A=%7.3f\t", x,modified_sin(x,A));
-		//printf("sin(%7.3f/2)-A=%7.3f\n", b,modified_sin(b,A));
+	
 		fprintf(printFile,"%.4f     %.4f\n",  x, modified_sin(x,A));
 	
 	}
