@@ -20,24 +20,35 @@ void main(){
    scanf("%f",&eps);
   
   
-  
-  
-  
+  //Faila dati tiks ierakstiti tikai Taisnstura metodei!
+  FILE * dataFile;
+ dataFile = fopen("integral.dat","w");
+ 
    
    
  // TAISNSTŪRA metode
+  fprintf(dataFile,"xRECT\t   integralisRECT \n");
   float aRECT = a;
   float xRECT=aRECT;
   float integralisRECT = 0;
   float iedalja = (b-a)/d;
+ 
   while(xRECT<b) 
     { 
+        fprintf(dataFile,"%.2lf\t\t%.2lf\n", xRECT,integralisRECT);
+    
         xRECT+=iedalja;
         integralisRECT+=(xRECT- aRECT)*(sin(xRECT/2));
          aRECT=xRECT;
+    // raksta datu faila
+    
+  
     }
        printf("Integralis, izmantojot taisnstura, metodi ir %f\n", integralisRECT);
-
+  
+  //aizver failu
+  fclose(dataFile);
+  
   
  //TRAPECES metode
   float integralisTRAP = 0;
@@ -52,7 +63,6 @@ void main(){
   integralisTRAP=(h1/2)*(sin(a/2)+sin(b/2)+2*summa);
   printf("Integralis, izmantojot trapeces, metodi ir  %f\n",integralisTRAP);
  
-  
   
   //SIMPSONA metode
   // source: https://www.bragitoff.com/2017/08/simpsons-13-rule-c-program/
