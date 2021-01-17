@@ -4,7 +4,8 @@
 ### Taisnstura metodei
   ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/4ld_integral/TaisnsturaInegralis.png?raw=true)
 
-Salīdzināsim ar WolframAlpha
+##Salīdzināsim ar WolframAlpha
+
  ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/4ld_integral/wolframAplpha.png?raw=true)
 
 
