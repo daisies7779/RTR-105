@@ -1,3 +1,7 @@
-**Šeit ir kods funkcijai sin(x/2);**
+#### 1. Laboratorijas darbs
+# ) izveidot savu sin(x/2) funkciju ar Teilora rindas metodi
 
-Skat, c failu sinuss.c
+### funkcijas grafiks
+  ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/1ld_series/sinusuSalidzinajums.png?raw=true)
+
+Datu [Izdrukas fails](https://github.com/daisies7779/RTR-105/blob/master/darbi/1ld_series/dati.txt)
