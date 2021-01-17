@@ -54,6 +54,7 @@ void main(){
   
   
   //Simspon metode sakums
+  // source: https://www.bragitoff.com/2017/08/simpsons-13-rule-c-program/
   float integralisSIMP = 0;
   float sumSIMP=0;
    h2=fabs(b-a)/d;
