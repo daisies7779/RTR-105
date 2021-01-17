@@ -11,16 +11,25 @@ double mans_sinuss(double x){
   printf("Nr.\targuments\ta\t Summa\n");
   printf("%3d %8.2f\t %8.4f\t %.2f\n",k, x, a,S); 
   
-  
+  FILE * printFile;
+  printFile = fopen("dati.txt","w");
   while(k<500){
    k++;
    a = a * (-1)*x*x/(4*(2*k)*(2*k+1));
    S = S+a;
-    if ((k<6)||(k>498))
-   //printf("%d %.2f\t%8.2f\t%8.2f\n",k, x, a,S); 
-   printf("%3d %8.2f\t %8.4f\t %.5f\n",k, x, a,S); 
+   
+    //pariecinas ka a nav nulle
+     if((fabs(a-a/pow(x,2)/(2*a*(2*a-1))) < 0.000001 ))
+         {
+   break;
   }
-  
+   
+   if ((k<6)||(k>498)) 
+   printf("%3d %8.2f\t %8.4f\t %.5f\n",k, x, a,S); 
+    
+
+  }
+   fclose(printFile);
   return S;
   
 }
@@ -64,5 +73,24 @@ void main(){
   
   // Zime ASCII simbolu koda summas izteiksmi un rekurences reizinataju
   zimesana(x);
+  
+  //Faila sarakstu mans_sinuss(x) datus lai tos attelto gnuplot un salidzinat ar standartfunkciju;
+ // robezas no x=0 līdz 3.14 radiani
+  FILE * printFile;
+  printFile = fopen("dati.txt","w");
+ 
+  float mans_x=0, mans_y=0, kapuma_solis=0.1;
+  while(mans_x<3.14){
+    
+   mans_y= mans_sinuss(mans_x);
+   mans_x+=kapuma_solis;
+    
+   fprintf(printFile,"%.4f    %.4f\n", mans_x, mans_y); 
+    
+ 
+   //printf("%3d %8.2f\t %8.4f\t %.5f\n",k, x, a,S); 
+   
+  }
+   fclose(printFile);
 
 }
