@@ -5,9 +5,9 @@
 
 
 void main(){
-    float a, b, d, B, eps, h,h1,h2, interg1=0, interg2,S1,S2,x,x1,integral,intergral;
- 
+    float a, b, d,  eps, h,h1,h2,  S1,S2,x,x1;
     int k,n=2,i,i1;
+ 
    
    printf("Šī programma aprēķina sin(x/2) integrāli,\n");
  printf("Ievadiet zemāko robežu: ");
@@ -19,7 +19,7 @@ void main(){
   printf("Ievadiet precizitātes vērtības iegūšanu : ");
    scanf("%f",&eps);
   
-  float iedalja = (b-a)/n;
+  
   
   
   
@@ -29,6 +29,7 @@ void main(){
   float aRECT = a;
   float xRECT=aRECT;
   float integralisRECT = 0;
+  float iedalja = (b-a)/d;
   while(xRECT<b) 
     { 
         xRECT+=iedalja;
