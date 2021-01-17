@@ -25,7 +25,7 @@ void main(){
   
    
    
- // Taisnstūra metode
+ // TAISNSTŪRA metode
   float aRECT = a;
   float xRECT=aRECT;
   float integralisRECT = 0;
@@ -38,7 +38,7 @@ void main(){
        printf("Integralis, izmantojot taisnstura, metodi ir %f\n", integralisRECT);
 
   
- 
+ //TRAPECES metode
   float integralisTRAP = 0;
   float summa=0;
   //Trapeces metode
@@ -53,7 +53,7 @@ void main(){
  
   
   
-  //Simspon metode sakums
+  //SIMPSONA metode
   // source: https://www.bragitoff.com/2017/08/simpsons-13-rule-c-program/
   float integralisSIMP = 0;
   float sumSIMP=0;
