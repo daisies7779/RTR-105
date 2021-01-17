@@ -35,7 +35,7 @@ void main(){
  
   while(xRECT<b) 
     { 
-        fprintf(dataFile,"%.2lf\t\t%.2lf\n", xRECT,integralisRECT);
+        fprintf(dataFile,"%.2lf\t\t%.2lf\n", xRECT, sin(xRECT/2));
     
         xRECT+=iedalja;
         integralisRECT+=(xRECT- aRECT)*(sin(xRECT/2));
