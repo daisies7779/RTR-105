@@ -55,15 +55,33 @@ int mode(int a[],int n) {
    return maxValue;
 }
 
+// atrod medianu
+// kods nemts no
+// https://www.includehelp.com/c-programs/calculate-median-of-an-array.aspx
+float Find_median(int array[] , int n)
+{
+    float median=0;
+    
+    // if number of elements are even
+    if(n%2 == 0)
+        median = (array[(n-1)/2] + array[n/2])/2.0;
+    // if number of elements are odd
+    else
+        median = array[n/2];
+    
+    return median;
+}
+
+  
 
 int main() 
 { 
-  int i, N, min, max;
+  int i, n, min, max;
   int * arr;
   float summa, videjais, mediana;
   
   printf("Ievadiet apstradajamo elementu skaitu: ");
-  scanf("%d", &N);
+  scanf("%d", &n);
   
   //printf("Masiva izmers:%lu\n",sizeof(arr)/sizeof(arr[0]) );
   
@@ -73,27 +91,25 @@ int main()
   printf("Ievadiet elementus: \n");
     
   //Ievada elementus un uzreiz saskaita to summu
-  for(i=0; i<N; i++)
+  for(i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
          summa += arr[i];
     }
 
-//	int arr1[] = {64, 34, 25, 12, 22, 11, 90}; 
-	//int n = sizeof(arr)/sizeof(arr[0]); 
-  
-  int n = N; //pectam novienādot
   printf("Masīvs pirms sakārtošanas: \n"); 
-  printArray(arr, N);
-	bubbleSort(arr, n); 
-	printf("Sakartotais masivs augoša seciba: \n"); 
-	printArray(arr, n); 
+  printArray(arr, n);
+  bubbleSort(arr, n); 
+  printf("Sakartotais masivs augoša seciba: \n"); 
+  printArray(arr, n); 
   
-  videjais= summa/N;
-  printf("Videja vertiba ir = %.2f\n", videjais);
-  printf("Mode = %d \n", mode(arr,n));
+  //videjais= summa/n;
+  printf("Videja vertiba ir = %.2f\n",  summa/n);
+  printf("Moda = %d \n", mode(arr,n));
+  printf("Mediana = %.3f\n", Find_median(arr, n));
   printf("Lielakais elements = %d\n", arr[n-1]);
   printf("Mazakais element = %d\n", arr[0]);
-	return 0; 
+	     return 0; 
+	     
 } 
 
