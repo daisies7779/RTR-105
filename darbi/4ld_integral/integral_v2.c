@@ -1,56 +1,75 @@
-#include<stdio.h>
-#include<math.h>
-
-void integralRectangle(double a, double b, double iedalja)
-{
-    double x=a, integralis = 0;
-    
-    while(x<b) 
-    { // Taisnstūra metode
-        x+=iedalja;
-        integralis+=(x-a)*(sin(x/2));
-        a=x;
-    }
-       printf("Integralis, izmantojot taisnstura, metodi ir %lf\n", integralis);
-}
-
-
-void integralTrapece(double a, double b, double iedalja)
-{
-    double x = a, integralis = 0;
-    while(x<b)
-    { 
-        x += iedalja;
-        integralis +=(sin(x/2)+sin(a/2))/2*(x-a);
-        a= x;
-    }
-    
-    printf("Integralis, izmantojot trapeces metodi, ir %lf\n", integralis);
-}
+  
+#include <stdio.h>
+#include <math.h>
 
 
 
-
-int main(){
- double a, b, x, iedalja;
- int n;
+void main(){
+    float a, b, d, B, eps, h,h1,h2, interg1=0, interg2,S1,S2,x,x1,integral,intergral;
  
- printf("Šī programma aprēķina sin(x/2) integrāli,\n");
+    int k,n=2,i,i1;
+   
+   printf("Šī programma aprēķina sin(x/2) integrāli,\n");
  printf("Ievadiet zemāko robežu: ");
- scanf(" %lf", &a);
+ scanf(" %f", &a);
  printf("Ievadiet augstāko robežu: ");
- scanf(" %lf", &b);
+ scanf(" %f", &b);
  printf("Cik daļās sadalīt intervālu: ");
- scanf(" %d", &n);
+ scanf(" %f", &d);//uz int
+  printf("Ievadiet precizitātes vērtības iegūšanu : ");
+   scanf("%f",&eps);
+  
+  float iedalja = (b-a)/n;
+  
+  
+  
+   
+   
+ // Taisnstūra metode
+  float aRECT = a;
+  float xRECT=aRECT;
+  float integralisRECT = 0;
+  while(xRECT<b) 
+    { 
+        xRECT+=iedalja;
+        integralisRECT+=(xRECT- aRECT)*(sin(xRECT/2));
+         aRECT=xRECT;
+    }
+       printf("Integralis, izmantojot taisnstura, metodi ir %f\n", integralisRECT);
+
+  
  
- iedalja = (b-a)/n;
+  float integralisTRAP = 0;
+  float summa=0;
+  //Trapeces metode
+   h1=fabs(b-a)/d;
+   for(i=1;i<d;i++){
+    x=a+i*h1;
+    summa=summa+sin(x/2);
+    
+  }
+  integralisTRAP=(h1/2)*(sin(a/2)+sin(b/2)+2*summa);
+  printf("Integralis, izmantojot trapeces, metodi ir  %f\n",integralisTRAP);
  
- integralRectangle(a,b,iedalja);
- integralTrapece(a,b,iedalja);
-// integralSimpson(a,b,iedalja,n);
- 
-  return 0;
- 
- 
+  
+  
+  //Simspon metode sakums
+  float integralisSIMP = 0;
+  float sumSIMP=0;
+   h2=fabs(b-a)/d;
+  for(i1=1;i1<d;i1++){
+    x1=a+i1*h2;
+    if(i1%2==0){
+      sumSIMP=sumSIMP+2*sin(x1/2);
+    }
+    else{
+      sumSIMP=sumSIMP+4*sin(x1/2);
+    }
+  }
+  integralisSIMP =(h2/3)*(sin(a/2)+sin(b/2)+sumSIMP);
+  printf("Integralis, izmantojot Simpsona, metodi ir : %f\n",integralisSIMP);
+  
+  
+  
 
 }
