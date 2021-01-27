@@ -1,4 +1,3 @@
-# RMB0AZ<br/>
 ## Klade <br/>
 ## ls
 **ls** - parāda adrešu sarakstu<br/>
