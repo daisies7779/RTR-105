@@ -1,26 +1,53 @@
-#### 2. Laboratorijas darbs
-# sin(x/2)=A aprēķins, izmantojot dihotomijas metodi
-#### Darba uzdevums
-Izstrādāt programmu, kura aprēķina sin(x/2)=A pēc lietotāja uzdotiem parametriem, attēlot tās grafiku ar gnuplot rīka palīdzību.
-#### Esošo failu funkcionālās atšķirības
-fails roots.c realizē visu prasīto programmas funkcionalitāti, bez datu saglabāšanas
-fails roots_dati.c satur papildkodu, kurš saglabā ģenerētos datus failā dati.txt
+#### Eksāmena uzdevums
 
-#### Uzdevuma matemātiskā analīze
-Svarīgi saprast ka funkcijas:
-1) sin(x/2)=A
-2) sin(x/2)-A
+# Dabuju kodu
+https://github.com/JrPhy/numerical/blob/master/Special%20function/special%20functions.c
 
-ir divas dažādas funkcijas, jo tām ir dažādi vērtību apgabali!
+## palaižu kodu
 
-Būtībā sin(x/2)=A saknes atrašana nozīmē atrisināt tās inverso funkciju 2arcsin(A)=x
-Tas nozīmē, ka izvēloties augšējo vai apakšējo robežu, jāņem vērā arcsin definīcija apgabals, kur x ir starp -1 un 1.
-Ja netiks ņemts vērā funkcijas vērtību apgabals (kurš ir attiecīgi tās inversās funkcijas defenīcijas apgabals), tad ar dihotomijas metodi
-algoritms sakni neatradīs jo nenotiks zīmes maiņa!
+## kods rēķina faktoriālu līdz 10
 
-Piemēram y=sin(x/2) + 7 vienmēr atradīsies pozitīvajā y vērtību apgabalā!
+## lasu kodu, neidziļinoties realizācija, bet aptveru ko kopumā var izdarīt proga
+
+## proga realizē dažādas f-jas: 
+## uzreiz gūgloju katras funkcijas nosaukumu, wikipedia lasu, visvairāk interesē grafiki
+## Beseļa, Beseļa atvasinājums,
+## Neimaņa, Neimaņa atvasinājums
+## faktoriālu (palaista no main )
+## Lagranža 
+https://en.wikipedia.org/wiki/Legendre_function
+https://en.wikipedia.org/wiki/Legendre_polynomials
+## GeneLegendre https://en.wikipedia.org/wiki/Associated_Legendre_polynomials
+## atvasinājums pēc Lagranža
+
+## uzlieku komentāru main esošajam factorial f-jas izsaukumam, atkomentēju Neimaņa, palaižu.
+## nan palasu, ko izvērsi nozīmē not a number https://en.cppreference.com/w/c/numeric/math/NAN
+## Nemaņa f-jas izsaukumā sākumā no radiāniem pāriet uz grādiem, tad izsauc pašu Neimaņa f-ju
+
+
+## Palasu viņa github
+## ir redzams, ka konkrētā koda fails ir lielāka projekta daļa, kurā tiek 
+## pētītas dažādas skaitliskās metodes c valodas kodam
+
+## eju dziļumā, skatos kā tieši realizētas funkcijas kodā.
+## Beselim - nosakia robežu exp -6, lai mazi skaitļi nav nulle,
+## fabs
+The fabs() function takes a single argument (in double) and returns the absolute value of that number (also in double).
+## rekurnece, rekurencē svarīgi iziet ārā no izsaukuma.
+
+## OriginalLegendre
+abs
+http://www.cplusplus.com/reference/cstdlib/abs/
+## gūglo fabs vs abs
+https://stackoverflow.com/questions/33738509/whats-the-difference-between-abs-and-fabs
+## matemātiskā jēga identiska, atšķirīga realizācija C koda abs for int, fabs decimālskaitļi
+
+## kodu uzlaboju, saglabājot datus data failā, lai var apskatīties gnu plot
+
+## saglabāju šīs piezīmes un kodu savā github repozitorijā
+https://github.com/daisies7779/RTR-105/commit/20c133b3cd11888113b22e28ded9c729d9951cf1
 #### Kods, grafiks un to apraksts.
-Dihotomijas metodei šo problēmu rada šī te koda daļa:
+Kods papildināts main funkcijā:
 ```c
 	#include<stdio.h>
 #include<math.h>
