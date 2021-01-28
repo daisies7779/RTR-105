@@ -242,17 +242,3 @@ int main()
 }
   ```
   
-  Savukārt attiecīgā modificētā funkcija ir:
-  
-  ```c
-  float modified_sin(float x, float A){
-	return sin(x/2)-A;
-}
-   ```
-   un kā jau minēju, dēļ inversās funkcijas definīcijas apgabala, sin(x/2)=0 nav ekvivalents sin(x/2)-A=A-A =>  sin(x/2)=A Bet Dihotomijas metode prezumē tieši šo ekvivalenci!
-   
-   Par to varam pārliecināties grafikā, kur atrastā sakne atrodas nevis uz oriģinālās funkcijas sin(x/2)-0.5 bet uz sin(x/2)
-   
-   ### funkcijas grafiks
-  ![alt text](https://github.com/daisies7779/RTR-105/blob/master/darbi/2ld_roots/arcsin05.png?raw=true)
- 
