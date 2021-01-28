@@ -12,7 +12,7 @@ https://github.com/JrPhy/numerical/blob/master/Special%20function/special%20func
 
 ## lasu kodu, neidziļinoties realizācija, bet aptveru ko kopumā var izdarīt proga
 
-## proga realizē dažādas f-jas: 
+## bez faktoriāla proga realizē vēl dažādas f-jas: 
 ## uzreiz gūgloju katras funkcijas nosaukumu, wikipedia lasu, visvairāk interesē grafiki
 ## Beseļa, Beseļa atvasinājums,
 ## Neimaņa, Neimaņa atvasinājums
