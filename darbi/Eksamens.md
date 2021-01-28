@@ -1,5 +1,8 @@
 #### Eksāmena uzdevums
 
+Prezentācija glabājas manā githabrepozitorija, tur uzlabotie varianti:
+https://github.com/daisies7779/RTR-105/commit/20c133b3cd11888113b22e28ded9c729d9951cf1
+
 # Dabuju kodu
 https://github.com/JrPhy/numerical/blob/master/Special%20function/special%20functions.c
 
@@ -23,7 +26,7 @@ https://en.wikipedia.org/wiki/Legendre_polynomials
 ## uzlieku komentāru main esošajam factorial f-jas izsaukumam, atkomentēju Neimaņa, palaižu.
 ## nan palasu, ko izvērsi nozīmē not a number https://en.cppreference.com/w/c/numeric/math/NAN
 ## Nemaņa f-jas izsaukumā sākumā no radiāniem pāriet uz grādiem, tad izsauc pašu Neimaņa f-ju
-
+https://en.wikipedia.org/wiki/Neumann_polynomial
 
 ## Palasu viņa github
 ## ir redzams, ka konkrētā koda fails ir lielāka projekta daļa, kurā tiek 
@@ -42,6 +45,8 @@ http://www.cplusplus.com/reference/cstdlib/abs/
 https://stackoverflow.com/questions/33738509/whats-the-difference-between-abs-and-fabs
 ## matemātiskā jēga identiska, atšķirīga realizācija C koda abs for int, fabs decimālskaitļi
 
+## koda funkcijas realizētas ar for ciklu, izmantota rekurence, skaitļa modulis, lai nodrošinātos
+## pret vērtību zudumu pret mazu skaitli, izmantota epsilon vērtība (skailtis patiesība nav nulle).
 ## kodu uzlaboju, saglabājot datus data failā, lai var apskatīties gnu plot
 
 ## saglabāju šīs piezīmes un kodu savā github repozitorijā
